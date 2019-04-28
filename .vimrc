@@ -22,11 +22,16 @@
 "autocomplete
   set wildmode=longest,list,full
 
+"indent of new line same as current line
+  set autoindent
+
 ":help key-notation
 
 "insert mode maps 
   "easier way to go to normal mode
   inoremap <Space><Space> <Esc>
+  "easier way to go to normal mode
+  inoremap <Space><Tab> <C-x><C-n>
 
 "normal mode maps 
   "easy file-wide substitution
@@ -45,6 +50,10 @@
   nnoremap <Space>l 15l
   "better save
   nnoremap <Space>z :w<CR>
+  "add space before cursor
+  nnoremap <Space>i i<Space><Esc>
+  "add space after cursor
+  nnoremap <Space>a a<Space><Esc>
   
 "visual mode maps 
   "copy to clipboard
@@ -62,7 +71,7 @@
 
 "general maps
   "paste from clipboard
-  map <C-p> "+p
+  map <C-p> "+P
 
 "no autocomment
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

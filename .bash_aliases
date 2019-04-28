@@ -1,21 +1,45 @@
-alias chrium='chromium-browser &>/dev/null &'
-alias chr='google-chrome &>/dev/null &'
+# open in chromium
 alias opium='chromium-browser &>/dev/null'
-alias open='xdg-open &>/dev/null'
-alias grades='~/Dropbox/1_Uni/5_Other/1_Gen/2_Grades/grades < ~/Dropbox/1_Uni/5_Other/1_Gen/2_Grades/grades.csv'
-alias e='~/Dropbox/1_Uni/5_Other/1_Gen/1_Exs/exercises < ~/Dropbox/1_Uni/5_Other/1_Gen/1_Exs/exercises.csv'
-alias toDo='~/Dropbox/2_Hobbies/1_Prog/2_Haskell/1_toDo/toDo < ~/Dropbox/2_Hobbies/1_Prog/2_Haskell/1_toDo/toDo.csv'
-alias exams='~/Dropbox/1_Uni/5_Other/1_Gen/3_Exams/exams < ~/Dropbox/1_Uni/5_Other/1_Gen/3_Exams/exams.csv'
+
+# open with default
+alias o='xdg-open &>/dev/null'
+
+# general commands in short
+alias c='cd'
+alias v='vim'
+alias md='mkdir'
+alias sv='sudo vim'
+
+# change to particular directory
 alias d='cd ~/Downloads'
 alias dr='cd ~/Dropbox'
 alias u='cd ~/Dropbox/1_Uni'
-alias vimcheat='vim /home/gnostis/Dropbox/2_Hobbies/1_Prog/3_Files/1_vimCheat'
+
+# edit particular file
+alias vct='vim /home/gnostis/Dropbox/2_Hobbies/1_Prog/3_Files/1_vimCheat'
 alias vb='vim ~/.bashrc'
 alias vba='vim ~/.bash_aliases'
 alias vv='vim ~/.vimrc'
 alias vi3='vim /home/gnostis/.config/i3/config'
+
+# open particular file 
+alias vcp='xdg-open &>/dev/null ~/Pictures/vimCheat.gif &'
+
+# source bashrc
 alias sb='source ~/.bashrc'
-alias r='ranger'
+
+# run ranger
+alias r='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias sr='sudo ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
+# show directory contents 2 levels deep
 alias t='tree -L 2'
-alias addExercise='~/Dropbox/1_Uni/5_Other/1_Gen/1_Exs/addExercise'
-alias addGrade='~/Dropbox/1_Uni/5_Other/1_Gen/2_Grades/addGrade'
+
+# run my executables
+alias g='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/2_Grades/1_showGrades/showGrades'
+alias ag='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/2_Grades/2_addGrade/addGrade' 
+alias e='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/1_showExercises/showExercises'
+alias ae='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/2_addExercise/addExercise'
+alias re='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/3_removeExercise/removeExercise'
+alias toDo='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/2_addExercise/addExercise'
+alias exams=''

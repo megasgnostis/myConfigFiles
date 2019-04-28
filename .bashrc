@@ -116,20 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH"
-
-_update_ps1() {
+function _update_ps1() {
     PS1=$(powerline-shell $?)
 }
 
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
-
-c() {
-  cd "$@"  
-}
-
-v() {
-  vim "$@" 
-}
