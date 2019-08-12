@@ -56,19 +56,20 @@
   "add space after cursor
   nnoremap <Space>a a<Space><Esc>
   
-   
+"If system clipboard copy and paste doesn't work install vim-gtk
+
 "visual mode maps 
   "copy to clipboard
   vnoremap <C-c> "+y
   "easier way to go to normal mode
   vnoremap <Space><Space> <Esc>
-  "better beginning of line 
+  "go left 15 chars 
   vnoremap <Space>h 15h
-  "go up 15 lines 
-  vnoremap <Space>j 15j
   "go down 15 lines 
-  vnoremap <Space>k 15k
+  vnoremap <Space>j 15j
   "go up 15 lines 
+  vnoremap <Space>k 15k
+  "go right 15 chars 
   vnoremap <Space>l 15l
 
 "general maps
