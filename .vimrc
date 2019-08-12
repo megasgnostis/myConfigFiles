@@ -3,6 +3,7 @@
 
 "syntax highlihting
   syntax on
+  "syntax off
 
 "encoding
   set encoding=utf-8
@@ -55,9 +56,10 @@
   "add space after cursor
   nnoremap <Space>a a<Space><Esc>
   
+   
 "visual mode maps 
   "copy to clipboard
-  vnoremap <C-c> "*y :let @+=@*<CR>
+  vnoremap <C-c> "+y
   "easier way to go to normal mode
   vnoremap <Space><Space> <Esc>
   "better beginning of line 

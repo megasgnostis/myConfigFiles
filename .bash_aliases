@@ -2,7 +2,7 @@
 alias opium='chromium-browser &>/dev/null'
 
 # open with default
-alias o='xdg-open &>/dev/null'
+alias o='xdg-open &>/dev/null &'
 
 # general commands in short
 alias c='cd'
@@ -23,7 +23,7 @@ alias vv='vim ~/.vimrc'
 alias vi3='vim /home/gnostis/.config/i3/config'
 
 # open particular file 
-alias vcp='xdg-open &>/dev/null ~/Pictures/vimCheat.gif &'
+alias vcp='xdg-open &>/dev/null ~/Pictures/vimCheat.jpg &'
 
 # source bashrc
 alias sb='source ~/.bashrc'
@@ -35,6 +35,9 @@ alias sr='sudo ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdi
 # show directory contents 2 levels deep
 alias t='tree -L 2'
 
+# run xampp manager
+alias xampp='sudo /opt/lampp/manager-linux-x64.run'
+
 # run my executables
 alias g='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/2_Grades/1_showGrades/showGrades'
 alias ag='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/2_Grades/2_addGrade/addGrade' 
@@ -43,3 +46,9 @@ alias ae='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/2_addExercise
 alias re='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/3_removeExercise/removeExercise'
 alias toDo='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/2_addExercise/addExercise'
 alias exams=''
+
+# git
+alias ga='git add .'
+alias gc='git commit -m "m"'
+alias gps='git push'
+alias gpl='git pull'
