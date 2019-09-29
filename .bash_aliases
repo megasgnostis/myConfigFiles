@@ -9,6 +9,8 @@ alias c='cd'
 alias v='vim'
 alias md='mkdir'
 alias sv='sudo vim'
+alias m='make'
+alias mc='make clean'
 
 # change to particular directory
 alias d='cd ~/Downloads'

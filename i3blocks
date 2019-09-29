@@ -98,13 +98,20 @@ interval=1
 #interval=10
 
 # Battery indicator
-#
-# The battery instance defaults to 0.
-[battery]
-#label=BAT
-label=⚡
-#instance=1
-interval=10
+##
+## The battery instance defaults to 0.
+#[battery]
+##label=BAT
+#label=⚡
+##instance=1
+#interval=10
+
+[batterybar]
+command=/home/gnostis/Dropbox/2_Hobbies/1_Prog/3_Files/myConfigFiles/i3blocksScripts/batteryBar
+label=bat:
+interval=5
+markup=pango
+min_width=bat: ■■■■■
 
 # Date Time
 #

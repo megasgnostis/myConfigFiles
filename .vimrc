@@ -2,8 +2,8 @@
   filetype plugin indent on
 
 "syntax highlihting
-  syntax on
-  "syntax off
+  "syntax on
+  syntax off
 
 "encoding
   set encoding=utf-8
@@ -55,6 +55,8 @@
   nnoremap <Space>i i<Space><Esc>
   "add space after cursor
   nnoremap <Space>a a<Space><Esc>
+  "add space after cursor
+  nnoremap <Space>m <C-v>>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 
