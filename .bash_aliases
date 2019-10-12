@@ -11,6 +11,8 @@ alias md='mkdir'
 alias sv='sudo vim'
 alias m='make'
 alias mc='make clean'
+alias sai='sudo apt install'
+alias cf='cd ~/Desktop/myConfigFiles'
 
 # change to particular directory
 alias d='cd ~/Downloads'

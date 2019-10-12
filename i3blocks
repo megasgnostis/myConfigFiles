@@ -107,7 +107,7 @@ interval=1
 #interval=10
 
 [batterybar]
-command=/home/gnostis/Dropbox/2_Hobbies/1_Prog/3_Files/myConfigFiles/i3blocksScripts/batteryBar
+command=~/Desktop/myConfigFiles/i3blocksScripts/batteryBar
 label=bat:
 interval=5
 markup=pango

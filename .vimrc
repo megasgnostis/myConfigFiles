@@ -2,8 +2,8 @@
   filetype plugin indent on
 
 "syntax highlihting
-  "syntax on
-  syntax off
+  syntax on
+  "syntax off
 
 "encoding
   set encoding=utf-8
