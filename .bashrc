@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 PS1="\W> "
+set -o vi
+bind '"jk":vi-movement-mode'

@@ -30,7 +30,7 @@
 
 "insert mode maps 
   "easier way to go to normal mode
-  inoremap <Space><Space> <Esc>
+  inoremap jk <Esc>
   "easier way to go to normal mode
   inoremap <Space><Tab> <C-x><C-n>
 
@@ -64,7 +64,7 @@
   "copy to clipboard
   vnoremap <C-c> "+y
   "easier way to go to normal mode
-  vnoremap <Space><Space> <Esc>
+  vnoremap jk <Esc>
   "go left 15 chars 
   vnoremap <Space>h 15h
   "go down 15 lines 
