@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:Ubuntu Sans Mono 16 
+font pango:Ubuntu Sans Mono 13 
 
 bar {
         position top
@@ -84,3 +84,4 @@ exec_always --no-startup-id nm-applet
 exec --no-startup-id setxkbmap -layout us,gr
 exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle'
 exec --no-startup-id dropbox start
+exec --no-startup-id xrandr --output eDP-1 --mode 1600x900
