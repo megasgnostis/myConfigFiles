@@ -25,6 +25,7 @@ alias vb='vim ~/.bashrc'
 alias vba='vim ~/.bash_aliases'
 alias vv='vim ~/.vimrc'
 alias vi3='vim /home/gnostis/.config/i3/config'
+alias vx='vim ~/.Xresources'
 
 # open particular file 
 alias vcp='xdg-open &>/dev/null ~/Pictures/vimCheat.jpg &'
@@ -57,3 +58,6 @@ alias gc='git commit -m "m"'
 alias gps='git push'
 alias gpl='git pull'
 alias gcln='git clone'
+
+# other 
+alias sx='xrdb ~/.Xresources'

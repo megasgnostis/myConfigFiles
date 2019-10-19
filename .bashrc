@@ -118,4 +118,4 @@ fi
 
 PS1="\W> "
 set -o vi
-bind '"jk":vi-movement-mode'
+bind '"  ":vi-movement-mode'
