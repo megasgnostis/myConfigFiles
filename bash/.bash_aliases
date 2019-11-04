@@ -22,9 +22,9 @@ alias sb='source ~/.bashrc'
 alias sx='xrdb ~/.Xresources'
 
 # run ranger
-alias rangerFromScript='SHELL=/usr/local/bin/ranger.sh ranger'
+alias rangerFromScript='SHELL=~/Desktop/stunningConfigFiles/ranger/ranger.sh ranger'
 alias r='rangerFromScript --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias sr='sudo rangerFromScript --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias sr='sudo ranger'
 alias rn='rangerFromScript ~/Dropbox/1_Uni/1_Now/ --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias rd='rangerFromScript ~/Downloads --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias rdr='rangerFromScript ~/Dropbox --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
