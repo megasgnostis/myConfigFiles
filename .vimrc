@@ -41,14 +41,12 @@
   nnoremap <Space>o o<Esc>0
   "add empty line before
   nnoremap <Space>O O<Esc>0
-  "go left 15 characters 
-  nnoremap <Space>h 15h
-  "go up 15 lines 
-  nnoremap <Space>j 15j
   "go down 15 lines 
-  nnoremap <Space>k 15k
+  nnoremap <Space>j 15j
   "go up 15 lines 
-  nnoremap <Space>l 15l
+  nnoremap <Space>k 15k
+  "latex reload
+  nnoremap <Space>l :! pdflatex %<CR><CR>
   "better save
   nnoremap <Space>z :w<CR>
   "add space before cursor
@@ -65,14 +63,14 @@
   vnoremap <C-c> "+y
   "easier way to go to normal mode
   vnoremap <Space><Space> <Esc>
-  "go left 15 chars 
-  vnoremap <Space>h 15h
   "go down 15 lines 
   vnoremap <Space>j 15j
   "go up 15 lines 
   vnoremap <Space>k 15k
-  "go right 15 chars 
-  vnoremap <Space>l 15l
+  "put space before
+  vnoremap <Space>i I<Space><Esc>
+  "add space after cursor
+  vnoremap <Space>m >
 
 "general maps
   "paste from clipboard

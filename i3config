@@ -27,7 +27,7 @@ bindsym $mod+v split v
 
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+Shift+c reload
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit?' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exit
 
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
@@ -75,6 +75,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+bindsym Print exec gnome-screenshot -i 
+bindsym $mod+Print exec gnome-screenshot -a
 
 exec_always setxkbmap -layout us,gr
 exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
@@ -82,3 +84,4 @@ exec_always feh --bg-scale ~/Dropbox/3_Other/nature.jpg
 exec_always nm-applet
 exec_always dropbox start
 exec_always xrandr --output eDP-1 --mode 1600x900
+exec_always sshfs parlab12@orion.cslab.ece.ntua.gr:/home/parallel/parlab12/ ~/Desktop/parlab 

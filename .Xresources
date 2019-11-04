@@ -36,7 +36,7 @@ URxvt.scrollBar: false
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
-URxvt.perl-ext-common: default,clipboard,keyboard-select
+URxvt.perl-ext-common:resize-font,edefault,clipboard,keyboard-select
 ! URxvt.keysym.Control-Meta-v: builtin-string:
 URxvt.iso14755: False
 URxvt.keysym.Shift-Control-P: perl:clipboard:paste
