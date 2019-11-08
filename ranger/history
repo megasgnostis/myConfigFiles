@@ -1,0 +1,50 @@
+rename gameOfLifeRun18.out
+find so
+shell gcc -o solveRiddles solveRiddles.c
+rename 1_parlab
+mkdir 2_Github
+rename 1_templateFiles
+mkdir 2_Vim
+open_with d
+open_with   qq\
+shell c
+open_with 
+shell vba
+h
+shell pwd
+touch ok.sh
+shell cp ranger.sh ranger2.sh
+shell cp ranger.sh ranger.sh2
+shell cp ranger2.sh ranger.sh
+rename ranger2.sh
+rename ok.sh
+rename ok2.sh
+rename rangerAliases.sh
+rename ranger.sh
+open_with l
+open_with h
+shell vb
+shell b
+shell sb
+search log
+rename gameOfLifeParallel.c
+rename gameOfLifeSerial.c
+find ra
+find rc
+find 2
+shell cp run1Thread.sh run2Thread.sh
+open_with q
+rename run4Threads.sh_
+shell rm bf*
+shell zip -r riddle executables source readme
+
+find .c
+find .co
+rename i3blocks.back
+rename i3.back
+rename i3b
+rename i3blocksb
+shell ./%s
+shell 
+rename .vimrc.back
+delete

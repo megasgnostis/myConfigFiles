@@ -31,7 +31,7 @@
 "insert mode maps 
   "easier way to go to normal mode
   inoremap <Space><Space> <Esc>
-  "easier way to go to normal mode
+  "autocomplete
   inoremap <Space><Tab> <C-x><C-n>
 
 "normal mode maps 
@@ -53,8 +53,10 @@
   nnoremap <Space>i i<Space><Esc>
   "add space after cursor
   nnoremap <Space>a a<Space><Esc>
-  "add space after cursor
+  "add tab at cursor
   nnoremap <Space>m <C-v>>
+  "add space after cursor
+  nnoremap <Space>e ea
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 

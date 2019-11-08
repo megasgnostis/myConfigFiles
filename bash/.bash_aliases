@@ -1,59 +1,72 @@
+helpFilesDir="~/Desktop/2_Github/stunningHelpFiles"
+
 # general commands in short
-alias c='cd'
-alias v='vim'
-alias md='mkdir'
-alias sv='sudo vim'
-alias m='make'
-alias mc='make clean'
-alias sai='sudo apt install'
+alias c="cd"
+alias v="vim"
+alias md="mkdir"
+alias sv="sudo vim"
+alias m="make"
+alias mc="make clean"
+alias sai="sudo apt install"
 
 # edit particular file
-alias vb='vim ~/.bashrc'
-alias vba='vim ~/.bash_aliases'
-alias vv='vim ~/.vimrc'
-alias vi3='vim ~/.config/i3/config'
-alias vx='vim ~/.Xresources'
+bashFile="~/.bashrc"
+bashAliasesFile="~/.bash_aliases"
+vimFile="~/.vimrc"
+i3File="~/.config/i3/config"
+XresourcesFile="~/.Xresources"
+
+alias vb="vim $bashFile"
+alias vba="vim $bashAliasesFile"
+alias vv="vim $vimFile"
+alias vi3="vim $i3File"
+alias vx="vim $XresourcesFile"
 
 # open particular file 
-alias vcp='xdg-open &>/dev/null ~/Dropbox/2_Hobbies/1_Prog/3_Files/2_vimCheatSheet.png &'
+vimCheatImageFile="$helpFilesDir/3_Vim/2_vimCheat.png"
+
+alias vcp="xdg-open &> /dev/null $vimCheatImageFile &"
 
 # source 
-alias sb='source ~/.bashrc'
-alias sx='xrdb ~/.Xresources'
+alias sb="source $bashFile"
+alias sx="xrdb $XresourcesFile"
 
 # run ranger
-alias rangerFromScript='SHELL=~/Desktop/stunningConfigFiles/ranger/ranger.sh ranger'
-alias r='rangerFromScript --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias sr='sudo ranger'
-alias rn='rangerFromScript ~/Dropbox/1_Uni/1_Now/ --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias rd='rangerFromScript ~/Downloads --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias rdr='rangerFromScript ~/Dropbox --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias rde='rangerFromScript ~/Desktop --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias rcf='rangerFromScript ~/Desktop/myConfigFiles --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
-alias rp='rangerFromScript ~/Dropbox/2_Hobbies/1_Prog  --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias aliasesInRangerScript="$helpFilesDir/1_Scripts/ranger.sh"
+alias cdToLastRangerDir="cd \"\`cat $HOME/.rangerdir\`\""
+alias r="aliasesInRangerScript; cdToLastRangerDir"
+alias sr="sudo r"
 
 # run my executables
-alias g='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/2_Grades/1_showGrades/showGrades'
-alias ag='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/2_Grades/2_addGrade/addGrade' 
-alias e='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/1_showExercises/showExercises'
-alias ae='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/2_addExercise/addExercise'
-alias re='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/3_removeExercise/removeExercise'
-alias toDo='~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated/1_Exs/2_addExercise/addExercise'
+uniRelatedFile="~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated"
+exercisesFile="1_Exs"
+gradesFile="2_Grades"
+ 
+alias g="$uniRelatedFile/$gradesFile/1_showGrades/showGrades"
+alias ag="$uniRelatedFile/$gradesFile/2_addGrade/addGrade" 
+alias e="$uniRelatedFile/$exercisesFile/1_showExercises/showExercises"
+alias ae="$uniRelatedFile/$exercisesFile/2_addExercise/addExercise"
+alias re="$uniRelatedFile/$exercisesFile/3_removeExercise/removeExercise"
+alias toDo="$uniRelatedFile/$exercisesFile/2_addExercise/addExercise"
 
 # git
-alias ga='git add .'
-alias gc='git commit -m "m"'
-alias gps='git push'
-alias gpl='git pull'
-alias gcln='git clone'
+alias ga="git add ."
+alias gc="git commit -m 'm'"
+alias gps="git push"
+alias gpl="git pull"
+alias gcln="git clone"
+alias gh="ga;gc;gps"
 
 # ssh
-alias parlab='ssh parlab12@orion.cslab.ece.ntua.gr'
-alias parlabfs='sshfs parlab12@orion.cslab.ece.ntua.gr:/home/parallel/parlab12/ ~/Desktop/parlab'
+orionParlab="parlab12@orion.cslab.ece.ntua.gr" 
+orionParlabHome="/home/parallel/parlab12/" 
+parlabMountpoint="~/Desktop/1_Parlab"
+alias parlab="ssh $orionParlab"
+alias parlabfs="sshfs $orionParlab:$orionParlabHome $parlabMountpoint"
 
 # gnome terminal
-alias gnter='gnome-terminal'
+alias gnter="gnome-terminal"
 
 # ls aliases
-alias l='ls -l'
-alias la='ls -A'
+alias l="ls -l"
+alias la="ls -A"
