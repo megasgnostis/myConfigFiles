@@ -1,13 +1,6 @@
-find 2
-find al
-touch 
-find pn
-;h
 rename fw.py
 mkdir fw
 rename recursivefw.png
-find 4
-find 1
 rename a1-parlab12-interim.pdf
 mkdir 4_New
 find configB
@@ -25,7 +18,6 @@ rename 3_notForMe
 
 find ec
 shell m
-shell mc
 mkdir 5_old
 shell temp showToDo.hs
 shell temp insert.hs
@@ -36,15 +28,23 @@ shell rm *.hi
 shell rm *.o
 shell temp types.hs
 rename forEverybody.hs
-find 3
 rename dirFromFile.sh
 open_with k``
 shell .
 shell ./setUpLinks.sh
-shell vba
 shell 
-shell gh
-mkdir ok
 shell temp Makefile
 shell temp ok.c
+find 1
+find 2
+find 3
+find 4
+find 
+shell mc
+shell vba
+shell gcln 
+mkdir ok
+shell gnome-session-quit c
+shell gcln git@github.com:CodeWizardDiSar/3_stunningExecutables.git
 delete
+shell gh

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-stunningConfigsPath="$HOME/Desktop/2_Github/stunningConfigFiles"
+stunningConfigsPath="$HOME/Desktop/2_Github/1_stunningConfigFiles"
 configFilesPath="$HOME/.config"
 dirFromFileScript="$stunningConfigsPath/dirFromFile.sh"
 

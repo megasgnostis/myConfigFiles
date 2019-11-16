@@ -1,4 +1,4 @@
-helpFilesDir="~/Desktop/2_Github/stunningHelpFiles"
+helpFilesDir="~/Desktop/2_Github/2_stunningHelpFiles"
 
 # general commands in short
 alias c="cd"
