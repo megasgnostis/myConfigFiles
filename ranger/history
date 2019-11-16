@@ -1,50 +1,50 @@
-rename gameOfLifeRun18.out
-find so
-shell gcc -o solveRiddles solveRiddles.c
-rename 1_parlab
-mkdir 2_Github
-rename 1_templateFiles
-mkdir 2_Vim
-open_with d
-open_with   qq\
-shell c
-open_with 
-shell vba
-h
-shell pwd
-touch ok.sh
-shell cp ranger.sh ranger2.sh
-shell cp ranger.sh ranger.sh2
-shell cp ranger2.sh ranger.sh
-rename ranger2.sh
-rename ok.sh
-rename ok2.sh
-rename rangerAliases.sh
-rename ranger.sh
-open_with l
-open_with h
-shell vb
-shell b
-shell sb
-search log
-rename gameOfLifeParallel.c
-rename gameOfLifeSerial.c
-find ra
-find rc
-find 2
-shell cp run1Thread.sh run2Thread.sh
-open_with q
-rename run4Threads.sh_
-shell rm bf*
-shell zip -r riddle executables source readme
-
-find .c
-find .co
-rename i3blocks.back
-rename i3.back
-rename i3b
-rename i3blocksb
+rename plot64.pdf
+shell rm *.err
+mkdir submitAll.sh
+touch sumbitAll.sh
 shell ./%s
+find our
+find out
+find 2
+find al
+touch 
+find pn
+;h
+rename fw.py
+mkdir fw
+rename recursivefw.png
+find 4
+find 1
+rename a1-parlab12-interim.pdf
+mkdir 4_New
+find configB
+mkdir 3_OSlab
+shell vba
+shell gcln git@github.com:CodeWizardDiSar/stunningExecutables.git
+rename 1_Exercises
+mkdir 4_outputs
+rename 1_exercises
+rename 2_grades
+rename Exams
+rename 
+rename 3_exams
+rename _outputs
+rename 3_notForMe
+
+find ec
 shell 
-rename .vimrc.back
+shell m
+shell mc
+mkdir 5_old
+shell temp showToDo.hs
+shell temp insert.hs
+shell temp edit.hs
+shell temp moveDone.hs
+shell temp showDone.hs
+shell rm *.hi
+shell rm *.o
+shell temp types.hs
+rename forEverybody.hs
+find 3
 delete
+shell ghci

@@ -1,8 +1,8 @@
 URxvt.font: xft:monospace:size=12
 URxvt.scrollBar: false
 ! special
-*.foreground: #93a1a1
-*.background: #141c21
+*.foreground: White
+*.background: Black
 *.cursorColor: #afbfbf
 
 ! black *.color0: #263640
@@ -21,7 +21,7 @@ URxvt.scrollBar: false
 *.color11: #d9a400
 
 ! blue
-*.color4: #2587cc
+*.color4: #1D60A7
 *.color12: #2ca2f5
 
 ! magenta

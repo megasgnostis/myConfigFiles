@@ -1,34 +1,33 @@
 #!/bin/bash
 
-stunningConfigsPath="$HOME/Desktop/stunningConfigFiles"
+stunningConfigsPath="$HOME/Desktop/2_Github/stunningConfigFiles"
 configFilesPath="$HOME/.config"
 backupsPath="$HOME/configBackups"
 
 mkdir $backupsPath
 cd $HOME
-file=".vimrc"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/vim/$file
-file=".bashrc"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/bash/$file
-file=".bash_aliases"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/bash/$file
-file=".Xresources"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/urxvt/$file
-file=".urxvt"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/urxvt/$file
+for file in {.vimrc,.bashrc,.bash_aliases,.Xresources,.urxvt}
+do
+  mv $file $backupsPath/$file
+  if [ $file == .vimrc ]
+  then
+    dir="vim"
+  fi
+  if [ $file == .bashrc ] || [ $file == .bash_aliases ]
+  then
+    dir="bash"
+  fi
+  if [ $file == .Xresources  ] || [ $file == .urxvt ]
+  then
+    dir="urxvt"
+  fi
+  
+  ln -s $stunningConfigsPath/$dir/$file
+done
 
 cd $configFilesPath
-file="i3blocks"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/$file
-file="i3"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/$file
-file="ranger"
-mv $file $backupsPath/$file
-ln -s $stunningConfigsPath/$file
+for file in {i3blocks,i3,ranger}
+do
+  mv $file $backupsPath/$file
+  ln -s $stunningConfigsPath/$file
+done

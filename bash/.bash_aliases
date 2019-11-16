@@ -70,3 +70,9 @@ alias gnter="gnome-terminal"
 # ls aliases
 alias l="ls -l"
 alias la="ls -A"
+
+# template files
+alias temp="$helpFilesDir/2_templateFiles/copyTemplate.sh"
+alias vtempc="v $helpFilesDir/2_templateFiles/1.c"
+alias vtempsh="v $helpFilesDir/2_templateFiles/2.sh"
+alias vtemphs="v $helpFilesDir/2_templateFiles/3.hs"
