@@ -41,10 +41,10 @@ shell temp types.hs
 rename forEverybody.hs
 find 3
 rename dirFromFile.sh
-shell 
 open_with k``
 shell gh
 shell .
 shell ./setUpLinks.sh
-delete
 shell vba
+shell 
+delete
