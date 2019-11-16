@@ -3,14 +3,14 @@
 stunningConfigsPath="$HOME/Desktop/2_Github/stunningConfigFiles"
 configFilesPath="$HOME/.config"
 backupsPath="$HOME/configBackups"
-dirFromExtensionScript="$stunningConfigsPath/dirFromExtension.sh"
+dirFromFileScript="$stunningConfigsPath/dirFromFile.sh"
 
 mkdir $backupsPath
 cd $HOME
 for file in {.vimrc,.bashrc,.bash_aliases,.Xresources,.urxvt}
 do
   mv $file $backupsPath/$file
-  dir=$($dirFromExtensionScript "$file")
+  dir=$($dirFromFileScript "$file")
   ln -s $stunningConfigsPath/$dir/$file
 done
 

@@ -56,7 +56,7 @@
   "add tab at cursor
   nnoremap <Space>m <C-v>>
   "add space after cursor
-  nnoremap <Space>e ea
+  nnoremap <Space>e :e<Space>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 

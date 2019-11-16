@@ -1,6 +1,3 @@
-shell rm *.err
-mkdir submitAll.sh
-touch sumbitAll.sh
 shell ./%s
 find our
 find out
@@ -18,6 +15,7 @@ rename a1-parlab12-interim.pdf
 mkdir 4_New
 find configB
 mkdir 3_OSlab
+shell vba
 shell gcln git@github.com:CodeWizardDiSar/stunningExecutables.git
 rename 1_Exercises
 mkdir 4_outputs
@@ -28,9 +26,7 @@ rename
 rename 3_exams
 rename _outputs
 rename 3_notForMe
-
 find ec
-shell 
 shell m
 shell mc
 mkdir 5_old
@@ -44,7 +40,11 @@ shell rm *.o
 shell temp types.hs
 rename forEverybody.hs
 find 3
-delete
 shell .
 shell ./setUpLinks.sh
-shell vba
+shell gh
+rename dirFromFile.sh
+shell 
+open_with k``
+delete
+
