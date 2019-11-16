@@ -44,7 +44,7 @@ rename dirFromFile.sh
 open_with k``
 shell gh
 shell .
-shell ./setUpLinks.sh
 shell vba
-shell 
 delete
+shell 
+shell ./setUpLinks.sh
