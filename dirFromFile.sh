@@ -6,5 +6,5 @@ case $1 in
 	.bash_aliases) echo "bash";;
 	.Xresources) echo "urxvt";;
 	.urxvt) echo "urxvt";;
-	*) echo "ok"
+	*) echo "wasn't supposed to happen. oops"
 esac
