@@ -1,5 +1,3 @@
-mkdir plots
-rename plot64.pdf
 shell rm *.err
 mkdir submitAll.sh
 touch sumbitAll.sh
@@ -20,7 +18,6 @@ rename a1-parlab12-interim.pdf
 mkdir 4_New
 find configB
 mkdir 3_OSlab
-shell vba
 shell gcln git@github.com:CodeWizardDiSar/stunningExecutables.git
 rename 1_Exercises
 mkdir 4_outputs
@@ -48,3 +45,6 @@ shell temp types.hs
 rename forEverybody.hs
 find 3
 delete
+shell .
+shell ./setUpLinks.sh
+shell vba
