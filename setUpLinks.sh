@@ -3,25 +3,14 @@
 stunningConfigsPath="$HOME/Desktop/2_Github/stunningConfigFiles"
 configFilesPath="$HOME/.config"
 backupsPath="$HOME/configBackups"
+dirFromExtensionScript="$stunningConfigsPath/dirFromExtension.sh"
 
 mkdir $backupsPath
 cd $HOME
 for file in {.vimrc,.bashrc,.bash_aliases,.Xresources,.urxvt}
 do
   mv $file $backupsPath/$file
-  if [ $file == .vimrc ]
-  then
-    dir="vim"
-  fi
-  if [ $file == .bashrc ] || [ $file == .bash_aliases ]
-  then
-    dir="bash"
-  fi
-  if [ $file == .Xresources  ] || [ $file == .urxvt ]
-  then
-    dir="urxvt"
-  fi
-  
+  dir=$($dirFromExtensionScript "$file")
   ln -s $stunningConfigsPath/$dir/$file
 done
 
