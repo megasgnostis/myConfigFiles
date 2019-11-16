@@ -1,6 +1,3 @@
-shell ./%s
-find our
-find out
 find 2
 find al
 touch 
@@ -42,9 +39,12 @@ rename forEverybody.hs
 find 3
 rename dirFromFile.sh
 open_with k``
-shell gh
 shell .
 shell ./setUpLinks.sh
 shell vba
 shell 
+shell gh
+mkdir ok
+shell temp Makefile
+shell temp ok.c
 delete
