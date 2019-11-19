@@ -1,50 +1,50 @@
-rename fw.py
-mkdir fw
-rename recursivefw.png
-rename a1-parlab12-interim.pdf
-mkdir 4_New
-find configB
-mkdir 3_OSlab
-shell gcln git@github.com:CodeWizardDiSar/stunningExecutables.git
-rename 1_Exercises
-mkdir 4_outputs
-rename 1_exercises
-rename 2_grades
-rename Exams
-rename 
-rename 3_exams
-rename _outputs
-rename 3_notForMe
-
-find ec
-shell m
-mkdir 5_old
-shell temp showToDo.hs
-shell temp insert.hs
-shell temp edit.hs
-shell temp moveDone.hs
-shell temp showDone.hs
-shell rm *.hi
-shell rm *.o
-shell temp types.hs
-rename forEverybody.hs
-rename dirFromFile.sh
-open_with k``
-shell .
-shell ./setUpLinks.sh
-shell 
 shell temp Makefile
 shell temp ok.c
-find 1
-find 2
-find 3
-find 4
-find 
 shell mc
 shell vba
 shell gcln 
 mkdir ok
 shell gnome-session-quit c
 shell gcln git@github.com:CodeWizardDiSar/3_stunningExecutables.git
-delete
 shell gh
+shell 
+mkdir forEverybody
+shell temp types.hs
+open_with 2
+find 2
+mkdir 1_generalStuff
+mkdir 2_Main
+mkdir 3_theRest
+rename 4_generalFunctions.hs
+shell temp 2_typeClasses.hs
+rename 5_fileToDataType.hs
+shell temp 3_instances.sh
+shell  
+shell temp 3_instances.hs
+shell q
+e'e
+rename 3_generalFunctions.hs
+rename add.hs
+rename 0_genFuncs.hs
+shell temp 
+shell temp 3_subsToFile.hs
+mkdir 1_code
+mkdir 2_pdf
+mkdir 3_images
+
+find ra
+find rc
+find 
+find 3
+find 4
+find 1
+mkdir 1_Info
+rename 2_Ενδιάμεση
+mkdir 3_Τελική
+rename 3_Ενδιάμεση
+rename 4_Τελική
+mkdir 2_Μετρήσεις
+delete
+rename 1_outputs
+rename 2_plot
+mkdir 4.ltdir

@@ -46,7 +46,7 @@
   "go up 15 lines 
   nnoremap <Space>k 15k
   "latex reload
-  nnoremap <Space>l :! pdflatex %<CR><CR>
+  nnoremap <Space>l :! pdflatex -output-directory ../2_pdf %<CR><CR>
   "better save
   nnoremap <Space>z :w<CR>
   "add space before cursor
@@ -57,6 +57,8 @@
   nnoremap <Space>m <C-v>>
   "add space after cursor
   nnoremap <Space>e :e<Space>
+  "remove highlighting after search
+  nnoremap <Space>h :noh<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 
