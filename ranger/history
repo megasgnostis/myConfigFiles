@@ -1,10 +1,3 @@
-shell temp Makefile
-shell temp ok.c
-shell mc
-shell vba
-shell gcln 
-mkdir ok
-shell gnome-session-quit c
 shell gcln git@github.com:CodeWizardDiSar/3_stunningExecutables.git
 shell gh
 shell 
@@ -31,7 +24,6 @@ shell temp 3_subsToFile.hs
 mkdir 1_code
 mkdir 2_pdf
 mkdir 3_images
-
 find ra
 find rc
 find 
@@ -44,7 +36,15 @@ mkdir 3_Τελική
 rename 3_Ενδιάμεση
 rename 4_Τελική
 mkdir 2_Μετρήσεις
-delete
 rename 1_outputs
 rename 2_plot
 mkdir 4.ltdir
+mkdir 1_files
+mkdir 2_dirs
+mkdir 3_script
+rename latex
+rename 1_latex
+
+rename 4_Makefile
+rename 1_copyTemplate.sh
+delete

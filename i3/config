@@ -84,4 +84,4 @@ exec_always feh --bg-scale ~/Dropbox/3_Other/nature.jpg
 exec_always nm-applet
 exec_always dropbox start
 exec_always xrandr --output eDP-1 --mode 1600x900
-exec_always sshfs parlab12@orion.cslab.ece.ntua.gr:/home/parallel/parlab12/ ~/Desktop/1_Parlab 
+#exec_always sshfs parlab12@orion.cslab.ece.ntua.gr:/home/parallel/parlab12/ ~/Desktop/1_Parlab 
