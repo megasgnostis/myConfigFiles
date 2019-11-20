@@ -29,52 +29,56 @@
 ":help key-notation
 
 "insert mode maps 
-  "easier way to go to normal mode
-  inoremap <Space><Space> <Esc>
   "autocomplete
-  inoremap <Space><Tab> <C-x><C-n>
+  imap <Space><Tab> <C-x><C-n>
+  "easier way to go to normal mode
+  imap <Space><Space> <Esc>
 
 "normal mode maps 
   "easy file-wide substitution
-  nnoremap <Space>s :%s//g<Left><Left>
+  nmap <Space>s :%s//g<Left><Left>
   "add empty line after
-  nnoremap <Space>o o<Esc>0
+  nmap <Space>o o<Esc>0
   "add empty line before
-  nnoremap <Space>O O<Esc>0
+  nmap <Space>O O<Esc>0
   "go down 15 lines 
-  nnoremap <Space>j 15j
+  nmap <Space>j 15j
   "go up 15 lines 
-  nnoremap <Space>k 15k
+  nmap <Space>k 15k
   "latex reload
-  nnoremap <Space>l :! pdflatex -output-directory ../2_pdf %<CR><CR>
+  nmap <Space>l :! pdflatex -output-directory ../2_pdf %<CR><CR>
   "better save
-  nnoremap <Space>z :w<CR>
+  nmap <Space>z :w<CR>
   "add space before cursor
-  nnoremap <Space>i i<Space><Esc>
+  nmap <Space>i i<Space><Esc>
   "add space after cursor
-  nnoremap <Space>a a<Space><Esc>
+  nmap <Space>a a<Space><Esc>
   "add tab at cursor
-  nnoremap <Space>m <C-v>>
+  nmap <Space>m <C-v>>
   "add space after cursor
-  nnoremap <Space>e :e<Space>
+  nmap <Space>e :e<Space>
   "remove highlighting after search
-  nnoremap <Space>h :noh<CR>
+  nmap <Space>h :noh<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 
 "visual mode maps 
   "copy to clipboard
-  vnoremap <C-c> "+y
+  vmap <C-c> "+y
   "easier way to go to normal mode
-  vnoremap <Space><Space> <Esc>
+  vmap <Space><Space> <Esc>
   "go down 15 lines 
-  vnoremap <Space>j 15j
+  vmap <Space>j 15j
   "go up 15 lines 
-  vnoremap <Space>k 15k
+  vmap <Space>k 15k
   "put space before
-  vnoremap <Space>i I<Space><Esc>
+  vmap <Space>i I<Space><Esc>
   "add space after cursor
-  vnoremap <Space>m >
+  vmap <Space>m >
+
+"command line mode maps
+  "easier way to go to normal mode
+  cmap <Space><Space> <Esc>
 
 "general maps
   "paste from clipboard
