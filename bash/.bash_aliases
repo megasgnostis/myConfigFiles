@@ -1,4 +1,5 @@
 helpFilesDir="~/Desktop/2_Github/2_stunningHelpFiles"
+helpScriptsDir="$helpFilesDir/1_Scripts"
 
 # general commands in short
 alias c="cd"
@@ -31,23 +32,11 @@ alias vcp="xdg-open &> /dev/null $vimCheatImageFile &"
 alias sb="source $bashFile"
 alias sx="xrdb $XresourcesFile"
 
-# run ranger
-alias aliasesInRangerScript="$helpFilesDir/1_Scripts/ranger.sh"
+# run ranger with aliases
+alias aliasesInRangerScript="$helpScriptsDir/2_ranger.sh"
 alias cdToLastRangerDir="cd \"\`cat $HOME/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo r"
-
-# run my executables
-uniRelatedFile="~/Dropbox/2_Hobbies/1_Prog/1_Projects/1_UniRelated"
-exercisesFile="1_Exs"
-gradesFile="2_Grades"
- 
-alias g="$uniRelatedFile/$gradesFile/1_showGrades/showGrades"
-alias ag="$uniRelatedFile/$gradesFile/2_addGrade/addGrade" 
-alias e="$uniRelatedFile/$exercisesFile/1_showExercises/showExercises"
-alias ae="$uniRelatedFile/$exercisesFile/2_addExercise/addExercise"
-alias re="$uniRelatedFile/$exercisesFile/3_removeExercise/removeExercise"
-alias toDo="$uniRelatedFile/$exercisesFile/2_addExercise/addExercise"
 
 # git
 alias ga="git add ."
@@ -64,6 +53,10 @@ parlabMountpoint="~/Desktop/1_Parlab"
 alias parlab="ssh $orionParlab"
 alias parlabfs="sshfs $orionParlab:$orionParlabHome $parlabMountpoint"
 
+rootAtLH="root@localhost" 
+utopiaPort="22223" 
+alias utopia="ssh -p $utopiaPort $rootAtLH"
+
 # gnome terminal
 alias gnter="gnome-terminal"
 
@@ -72,8 +65,11 @@ alias l="ls -l"
 alias la="ls -A"
 
 # template files
-alias temp="$helpFilesDir/2_templateFiles/3_script/1_copyTemplate.sh"
 alias vtempc="v $helpFilesDir/2_templateFiles/1.c"
 alias vtempsh="v $helpFilesDir/2_templateFiles/2.sh"
 alias vtemphs="v $helpFilesDir/2_templateFiles/3.hs"
 alias vtempMakefile="v $helpFilesDir/2_templateFiles/Makefile"
+
+# help scripts
+alias temp="$helpScriptsDir/1_copyTemplate.sh"
+alias dirReplace="$helpScriptsDir/4_replaceInDir.sh"

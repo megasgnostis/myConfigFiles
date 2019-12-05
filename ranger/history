@@ -1,50 +1,50 @@
-mkdir 1_generalStuff
-mkdir 2_Main
-mkdir 3_theRest
-rename 4_generalFunctions.hs
-shell temp 2_typeClasses.hs
-rename 5_fileToDataType.hs
-shell temp 3_instances.sh
-shell  
-shell temp 3_instances.hs
-shell q
-e'e
-rename 3_generalFunctions.hs
-rename add.hs
-rename 0_genFuncs.hs
-shell temp 
-shell temp 3_subsToFile.hs
-mkdir 1_code
-mkdir 2_pdf
-mkdir 3_images
-find ra
-find rc
-find 
-find 3
-mkdir 1_Info
-rename 2_Ενδιάμεση
-mkdir 3_Τελική
-rename 3_Ενδιάμεση
-rename 4_Τελική
-mkdir 2_Μετρήσεις
-rename 1_outputs
-rename 2_plot
-mkdir 4.ltdir
-mkdir 1_files
-mkdir 2_dirs
-mkdir 3_script
-rename latex
-rename 1_latex
-rename 4_Makefile
-rename 1_copyTemplate.sh
-find 1
+rename 1_Κωδικοί
+rename 2.odt
+rename 3_Πινακίδα.jpg
+rename 1_Grader.jpg
+rename 2_Parlab.jpg
+rename 4_Groupama.png
+shell vcp
+mkdir 4_Ροές
+search 3
+rename 1_Ροή_Λ
+rename 1_Ροή_Υ
+rename 2_Ροή_Υ
+rename 3_Ροή_Μ
+rename 4_Ροή_Φ
+rename 1_QuantumMechs_II
+rename 2_QuantumComps
+rename 1_Ροές
+rename 3_Περασμένα
+mkdir 1_Exercises
+rename 1_Στοχαστικά
+rename 2_Στοχαστικά
+rename 1_ΣΗΕ
 find 4
-mkdir 1_gameOfLife
-touch data
-find .ca
-touch ok
-open_with vim
-delete
-rename version
-find 6
+rename 3_ΡοήΦ
+rename 4_ΡοήΜ
 
+find q
+find pi
+touch ok1
+shell ok1 > ok2
+shell ok2 > ok1
+open_with  vim
+shell 
+shell ok2 > ok3
+open_with vm
+open_with vim
+shell cat ok2 > ok4
+shell ok5 < ok4
+open_with 
+find .
+find .co
+find ra
+mkdir ok
+find ok
+touch ok
+shell ed ok
+find 3
+find 1
+rename 1.tex
+delete

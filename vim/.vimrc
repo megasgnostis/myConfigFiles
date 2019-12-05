@@ -14,9 +14,6 @@
 "searh options
   set hlsearch incsearch ignorecase smartcase
 
-"line break options
-  set linebreak breakindent showbreak="   --->"
-
 "tab options
   set expandtab tabstop=2 shiftwidth=2
      
@@ -30,9 +27,12 @@
 
 "insert mode maps 
   "autocomplete
-  imap <Space><Tab> <C-x><C-n>
+  imap <Space><Tab> <C-n>
   "easier way to go to normal mode
   imap <Space><Space> <Esc>
+  "j k navigation in autocomplete
+  imap <expr> j pumvisible() ? "\<C-N>" : "j"
+  imap <expr> k pumvisible() ? "\<C-P>" : "k"
 
 "normal mode maps 
   "easy file-wide substitution
@@ -41,10 +41,6 @@
   nmap <Space>o o<Esc>0
   "add empty line before
   nmap <Space>O O<Esc>0
-  "go down 15 lines 
-  nmap <Space>j 15j
-  "go up 15 lines 
-  nmap <Space>k 15k
   "latex reload
   nmap <Space>l :! pdflatex -output-directory ../2_pdf %<CR><CR>
   "better save
@@ -67,10 +63,6 @@
   vmap <C-c> "+y
   "easier way to go to normal mode
   vmap <Space><Space> <Esc>
-  "go down 15 lines 
-  vmap <Space>j 15j
-  "go up 15 lines 
-  vmap <Space>k 15k
   "put space before
   vmap <Space>i I<Space><Esc>
   "add space after cursor
