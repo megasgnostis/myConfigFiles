@@ -1,10 +1,7 @@
-rename 1_Κωδικοί
-rename 2.odt
 rename 3_Πινακίδα.jpg
 rename 1_Grader.jpg
 rename 2_Parlab.jpg
 rename 4_Groupama.png
-shell vcp
 mkdir 4_Ροές
 search 3
 rename 1_Ροή_Λ
@@ -47,4 +44,7 @@ shell ed ok
 find 3
 find 1
 rename 1.tex
+shell ./y
 delete
+shell vcp
+shell ./setUpLinks.sh
