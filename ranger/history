@@ -1,3 +1,4 @@
+rename 3_Πινακίδα.jpg
 rename 1_Grader.jpg
 rename 2_Parlab.jpg
 rename 4_Groupama.png
@@ -44,7 +45,6 @@ find 3
 find 1
 rename 1.tex
 shell ./y
-delete
 shell vcp
 shell ./setUpLinks.sh
-shell gh
+delete
