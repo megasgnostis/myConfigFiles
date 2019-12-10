@@ -1,16 +1,19 @@
 #!/bin/bash
 
-configFilesPath="$HOME/.config"
-
-mkdir $HOME/configBackups
+configs="$HOME/.config"
+configBackupsPath="$HOME/.configBackups"
+stunningConfigs="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+script="$stunningConfigs/dirFromFile.sh"
+mkdir $configBackupsPath
 for file in {.vimrc,.bashrc,.bash_aliases,.Xresources,.urxvt}
 do
-  mv $HOME/$file $HOME/configBackups
-  ln -s $PWD/$($PWD/dirFromFile.sh $file)/$file $HOME
+  filePath="$HOME/$file"
+  mv $filePath $configBackupsPath
+  intermiateDir=$($script $file)
+  ln -s $stunningConfigs/$intermiateDir/$file $HOME
 done
-
-for file in {i3blocks,i3,ranger}
+for dir in {i3blocks,i3,ranger}
 do
-  mv $configFilesPath/$file $HOME/configBackups
-  ln -s $PWD/$file $configFilesPath
+  mv $configs/$dir $configBackupsPath
+  ln -s $stunningConfigs/$dir $configs/$dir
 done

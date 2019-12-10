@@ -1,6 +1,3 @@
-shell ok5 < ok4
-find .
-find .co
 find ok
 touch ok
 shell ed ok
@@ -9,7 +6,6 @@ shell ./y
 shell vcp
 shell gcln git@github.com:CodeWizardDiSar/2StunningHelpFiles.git
 bulkrename 
-find ra
 mkdir 1-8
 rename 9ParallelConcurentHaskell
 open_with l
@@ -41,10 +37,14 @@ find 3
 find 1
 find 2
 shell ./exercises
-open_with 
 rename ver
 open_with vim
-delete
 shell gh
 shell git rm --cached 
 shell git rm --cached 4NotForMe
+search confi
+search 
+find configBackups
+open_with 
+find ra
+delete
