@@ -1,29 +1,23 @@
 "detect, enable plugins and indent
-  filetype plugin indent on
-
+filetype plugin indent on
 "syntax highlihting
-  syntax on
-  "syntax off
-
+syntax on
+"syntax off
 "encoding
-  set encoding=utf-8
-
+set encoding=utf-8
 "relative numbers for moving around
-  set number relativenumber
-
+set number relativenumber
 "searh options
-  set hlsearch incsearch ignorecase smartcase
-
+set hlsearch incsearch ignorecase smartcase
 "tab options
-  set expandtab tabstop=2 shiftwidth=2
-     
+set expandtab tabstop=2 shiftwidth=2
 "autocomplete
-  set wildmode=longest,list,full
+"set wildmode=longest,list,full
+"indent same as previous line
+set autoindent
 
-"indent of new line same as current line
-  set autoindent
-
-":help key-notation
+"You'll probably need
+":help key-notation 
 
 "insert mode maps 
   "autocomplete
@@ -42,7 +36,7 @@
   "empty line before
   nmap <Space>O O<Esc>0
   "latex reload
-  nmap <Space>l :! pdflatex -output-directory ../2_pdf %<CR><CR>
+  nmap <Space>l :w<CR> :! pdflatex -output-directory ../2Pdf %<CR><CR>
   "better save
   nmap <Space>z :w<CR>
   "space at cursor
@@ -55,8 +49,8 @@
   nmap <Space>e :w<CR>:e<Space>
   "remove highlighting
   nmap <Space>h :noh<CR>
-  "make
-  nmap <Space>m :! cd ../../2_make; make<CR>
+  "save and make
+  nmap <Space>m :w<CR>:! cd ../../2Make; make<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 
