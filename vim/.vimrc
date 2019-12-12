@@ -51,6 +51,8 @@ set autoindent
   nmap <Space>h :noh<CR>
   "save and make
   nmap <Space>m :w<CR>:! cd ../../2Make; make<CR>
+  "execute
+  nmap <Space>x :! ../../3Executable<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 

@@ -73,3 +73,6 @@ alias vtempMakefile="v $helpFilesDir/2TemplateFiles/Makefile"
 # help scripts
 alias temp="$helpScriptsDir/1CopyTemplate.sh"
 alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
+
+# refresh wifi
+alias wfr="sudo service network-manager restart"

@@ -1,7 +1,3 @@
-find ok
-touch ok
-shell ed ok
-rename 1.tex
 shell ./y
 shell vcp
 shell gcln git@github.com:CodeWizardDiSar/2StunningHelpFiles.git
@@ -20,7 +16,6 @@ shell temp revertConfigs.sh
 shell ./setUpLinks.sh
 shell ./revertConfigs.sh
 shell vba
-
 touch 5ControlBrightness.sh
 shell 5ControlBrightness.sh  
 shell ./1CopyTemplate.sh ok.sh
@@ -47,4 +42,9 @@ search
 find configBackups
 open_with 
 find ra
+rename NotForMe
+
+shell tmp 4Paths
+shell temp ok.hs
 delete
+shell temp 4Paths.hs
