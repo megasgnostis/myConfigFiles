@@ -47,12 +47,6 @@ alias gcln="git clone"
 alias gh="ga;gc;gps"
 
 # ssh
-orionParlab="parlab12@orion.cslab.ece.ntua.gr" 
-orionParlabHome="/home/parallel/parlab12/" 
-parlabMountpoint="~/Desktop/1Parlab"
-alias parlab="ssh $orionParlab"
-alias parlabfs="sshfs $orionParlab:$orionParlabHome $parlabMountpoint"
-
 rootAtLH="root@localhost" 
 utopiaPort="22223" 
 alias utopia="ssh -p $utopiaPort $rootAtLH"
