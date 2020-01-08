@@ -1,5 +1,5 @@
 "detect, enable plugins and indent
-filetype plugin indent on
+"filetype plugin indent on
 "syntax highlihting
 syntax on
 "syntax off
@@ -12,7 +12,7 @@ set hlsearch incsearch ignorecase smartcase
 "tab options
 set expandtab tabstop=2 shiftwidth=2
 "autocomplete
-"set wildmode=longest,list,full
+set wildmode=longest,list,full
 "indent same as previous line
 set autoindent
 
@@ -53,6 +53,8 @@ set autoindent
   nmap <Space>m :w<CR>:! cd ../../2Make; make<CR>
   "execute
   nmap <Space>x :! ../../4Executable<CR>
+  "execute
+  nmap <Space>q :q!<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 

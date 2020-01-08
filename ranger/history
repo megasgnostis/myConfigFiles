@@ -1,50 +1,50 @@
-shell ./revertConfigs.sh
-shell vba
-touch 5ControlBrightness.sh
-shell 5ControlBrightness.sh  
-shell ./1CopyTemplate.sh ok.sh
-shell ./ok.sh
-shell ./ok.sh ok
-shell temp ok.sh
-shell temp 5ControlBrightness.sh
-touch 6BrightnessLevel
-shell 
-shell ./5ControlBrightness.sh
-search brightness
-shell temp 2.latDir
-find 3
-shell ./exercises
-rename ver
-open_with vim
-shell git rm --cached 
-shell git rm --cached 4NotForMe
-search confi
-search 
-find configBackups
-find ra
-rename NotForMe
-shell tmp 4Paths
-shell temp ok.hs
-shell temp 4Paths.hs
-shell temp menu.hs
 open_with hj
 find 4
 find 0
 find 6
 find 5
-shell gh
-
 mkdir 4Helpful
-open_with 
 shell make clean
 shell make
 shell
 shell mac
 mkdir 1ToCheckOut
-delete
 l
 open_with 1
-find 2
-find 9
-find 1
 touch 2Server.php
+rename xnu.mod
+find ra
+mkdir php
+find 
+mkdir 4Php
+find etc
+find ht
+find va
+find w
+touch palindrome.html
+e
+rename 2Palindrome.php
+;
+open_with
+find 2
+find 1
+shell chm
+find 3
+rename 2Add.hs
+shell gh
+mkdir 4StunningWebsite
+touch 1.hs
+mkdir ok
+touch 
+shell temp ok.hs
+shell runhaskell 1.hs
+open_with vim
+`
+shell 
+delete
+open_with 
+find .xm
+find 9
+shell `
+shell m
+

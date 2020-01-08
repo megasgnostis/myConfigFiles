@@ -1,16 +1,18 @@
-helpFilesDir="~/Desktop/2Github/2StunningHelpFiles"
+helpFilesDir="~/Desktop/1Github/2StunningHelpFiles"
 helpScriptsDir="$helpFilesDir/1Scripts"
 
 # general commands in short
 alias c="cd"
 alias v="vim"
+alias l="ls -l"
+alias la="ls -A"
 alias md="mkdir"
 alias sv="sudo vim"
 alias m="make"
 alias mc="make clean"
 alias sai="sudo apt install"
 
-# edit particular file
+# edit particular config file
 bashFile="~/.bashrc"
 bashAliasesFile="~/.bash_aliases"
 vimFile="~/.vimrc"
@@ -25,7 +27,6 @@ alias vx="vim $XresourcesFile"
 
 # open particular file 
 vimCheatImageFile="$helpFilesDir/3Vim/2VimCheat.png"
-
 alias vcp="xdg-open &> /dev/null $vimCheatImageFile &"
 
 # source 
@@ -36,37 +37,46 @@ alias sx="xrdb $XresourcesFile"
 alias aliasesInRangerScript="$helpScriptsDir/2Ranger.sh"
 alias cdToLastRangerDir="cd \"\`cat $HOME/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
-alias sr="sudo r"
+alias sr="sudo ranger"
 
 # git
 alias ga="git add ."
 alias gc="git commit -m 'm'"
 alias gps="git push"
+alias gh="ga;gc;gps"
 alias gpl="git pull"
 alias gcln="git clone"
-alias gh="ga;gc;gps"
 
 # ssh
 rootAtLH="root@localhost" 
 utopiaPort="22223" 
 alias utopia="ssh -p $utopiaPort $rootAtLH"
 
-# gnome terminal
-alias gnter="gnome-terminal"
-
-# ls aliases
-alias l="ls -l"
-alias la="ls -A"
-
 # template files
-alias vtempc="v $helpFilesDir/2TemplateFiles/1.c"
-alias vtempsh="v $helpFilesDir/2TemplateFiles/2.sh"
-alias vtemphs="v $helpFilesDir/2TemplateFiles/3.hs"
-alias vtempMakefile="v $helpFilesDir/2TemplateFiles/Makefile"
+alias vTmpC="v $helpFilesDir/2TemplateFiles/1.c"
+alias vTmpSh="v $helpFilesDir/2TemplateFiles/2.sh"
+alias vTmpHs="v $helpFilesDir/2TemplateFiles/3.hs"
+alias vTmpMakefile="v $helpFilesDir/2TemplateFiles/Makefile"
 
 # help scripts
 alias temp="$helpScriptsDir/1CopyTemplate.sh"
 alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
 
 # refresh wifi
-alias wfr="sudo service network-manager restart"
+alias rwf="sudo service network-manager restart"
+
+# sound
+alias sound="alsamixer"
+alias battery="acpi"
+
+# vi3 startup
+alias setLangs="setxkbmap -layout us,gr"
+alias changeLang="setxkbmap -option 'grp:ctrl_alt_toggle'"
+alias background="feh --bg-scale ~/Dropbox/3Other/nature.jpg"
+alias initialize="setLangs;changeLang;background"
+# exec_always setxkbmap -layout us,gr
+# exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
+# exec_always feh --bg-scale ~/Dropbox/3Other/nature.jpg
+# exec_always nm-applet
+# exec_always dropbox start
+# exec_always xrandr --output eDP-1 --mode 1600x900
