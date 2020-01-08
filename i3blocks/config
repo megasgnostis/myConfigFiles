@@ -8,7 +8,7 @@ instance=Master
 interval=1
 
 [batterybar]
-command=/home/lena/Desktop/1StunningConfigFiles/i3blocks/batteryBar
+command=~/Desktop/1StunningConfigFiles/i3blocks/batteryBar
 interval=5
 markup=pango
 min_width=■■■■■
