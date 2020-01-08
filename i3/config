@@ -1,5 +1,5 @@
 set $mod Mod4
-set $brightnessScriptPath /home/gnostis/Desktop/2Github/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
+set $brightnessScriptPath /home/lena/Desktop/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
 
 font pango:Ubuntu Sans Mono 13 
 
@@ -17,7 +17,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+r mode "resize"
   
 bindsym $mod+a exec urxvt
-bindsym $mod+s exec "chromium-browser"
+bindsym $mod+s exec "google-chrome"
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 

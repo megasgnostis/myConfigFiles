@@ -1,4 +1,4 @@
-helpFilesDir="~/Desktop/1Github/2StunningHelpFiles"
+helpFilesDir="~/Desktop/2StunningHelpFiles"
 helpScriptsDir="$helpFilesDir/1Scripts"
 
 # general commands in short
