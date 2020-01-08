@@ -1,5 +1,11 @@
 set $mod Mod4
+<<<<<<< HEAD
 font pango:Ubuntu Sans Mono 16
+=======
+set $brightnessScriptPath ~/Desktop/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
+
+font pango:Ubuntu Sans Mono 13 
+>>>>>>> 8691ab555ee063bf7b0646513cb9b1ba3e9e5bdf
 
 bar {
         position top
@@ -9,13 +15,17 @@ bar {
 floating_modifier $mod
 bindsym $mod+space focus mode_toggle
 
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+e exit
+
 bindsym $mod+q layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 bindsym $mod+r mode "resize"
   
 bindsym $mod+a exec urxvt
-bindsym $mod+s exec "chromium-browser"
+bindsym $mod+s exec "google-chrome"
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 
@@ -24,15 +34,11 @@ bindsym $mod+x restart
 bindsym $mod+c split h
 bindsym $mod+v split v
 
-bindsym $mod+Shift+space floating toggle
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+e exit
-
 mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         bindsym space mode "default"
 }

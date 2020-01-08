@@ -8,7 +8,7 @@ instance=Master
 interval=1
 
 [batterybar]
-command=/home/gnostis/Desktop/1Github/1StunningConfigFiles/i3blocks/batteryBar
+command=~/Desktop/1StunningConfigFiles/i3blocks/batteryBar
 interval=5
 markup=pango
 min_width=■■■■■

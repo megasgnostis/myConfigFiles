@@ -1,4 +1,4 @@
-helpFilesDir="~/Desktop/1Github/2StunningHelpFiles"
+helpFilesDir="~/Desktop/2StunningHelpFiles"
 helpScriptsDir="$helpFilesDir/1Scripts"
 
 # general commands in short
@@ -62,10 +62,8 @@ alias vTmpMakefile="v $helpFilesDir/2TemplateFiles/Makefile"
 alias temp="$helpScriptsDir/1CopyTemplate.sh"
 alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
 
-# refresh wifi
+# peripherals
 alias rwf="sudo service network-manager restart"
-
-# sound
 alias sound="alsamixer"
 alias battery="acpi"
 
@@ -74,9 +72,3 @@ alias setLangs="setxkbmap -layout us,gr"
 alias changeLang="setxkbmap -option 'grp:ctrl_alt_toggle'"
 alias background="feh --bg-scale ~/Dropbox/3Other/nature.jpg"
 alias initialize="setLangs;changeLang;background"
-# exec_always setxkbmap -layout us,gr
-# exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
-# exec_always feh --bg-scale ~/Dropbox/3Other/nature.jpg
-# exec_always nm-applet
-# exec_always dropbox start
-# exec_always xrandr --output eDP-1 --mode 1600x900
