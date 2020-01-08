@@ -62,10 +62,8 @@ alias vTmpMakefile="v $helpFilesDir/2TemplateFiles/Makefile"
 alias temp="$helpScriptsDir/1CopyTemplate.sh"
 alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
 
-# refresh wifi
+# peripherals
 alias rwf="sudo service network-manager restart"
-
-# sound
 alias sound="alsamixer"
 alias battery="acpi"
 
