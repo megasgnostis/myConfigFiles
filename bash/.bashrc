@@ -115,11 +115,3 @@ PS1="\W> "
 set -o vi
 bind '"  ":vi-movement-mode'
 
-export I_NEED_TECH_HINTS=1
-
-ra() {
-  SHELL=~/Desktop/2_Github/stunningHelpFiles/1_Scripts/rangerAliases.sh
-  ranger --choosedir=$HOME/.rangerdir;
-  LASTDIR=`cat $HOME/.rangerdir`;
-  cd "$LASTDIR"
-}
