@@ -1,90 +1,4 @@
-# -*- coding: utf-8 -*-
-# This file is part of ranger, the console file manager.
-# This configuration file is licensed under the same terms as ranger.
-# ===================================================================
-#
-# NOTE: If you copied this file to ~/.config/ranger/commands_full.py,
-# then it will NOT be loaded by ranger, and only serve as a reference.
-#
-# ===================================================================
-# This file contains ranger's commands.
-# It's all in python; lines beginning with # are comments.
-#
-# Note that additional commands are automatically generated from the methods
-# of the class ranger.core.actions.Actions.
-#
-# You can customize commands in the file ~/.config/ranger/commands.py.
-# It has the same syntax as this file.  In fact, you can just copy this
-# file there with `ranger --copy-config=commands' and make your modifications.
-# But make sure you update your configs when you update ranger.
-#
-# ===================================================================
-# Every class defined here which is a subclass of `Command' will be used as a
-# command in ranger.  Several methods are defined to interface with ranger:
-#   execute():   called when the command is executed.
-#   cancel():    called when closing the console.
-#   tab(tabnum): called when <TAB> is pressed.
-#   quick():     called after each keypress.
-#
-# tab() argument tabnum is 1 for <TAB> and -1 for <S-TAB> by default
-#
-# The return values for tab() can be either:
-#   None: There is no tab completion
-#   A string: Change the console to this string
-#   A list/tuple/generator: cycle through every item in it
-#
-# The return value for quick() can be:
-#   False: Nothing happens
-#   True: Execute the command afterwards
-#
-# The return value for execute() and cancel() doesn't matter.
-#
-# ===================================================================
-# Commands have certain attributes and methods that facilitate parsing of
-# the arguments:
-#
-# self.line: The whole line that was written in the console.
-# self.args: A list of all (space-separated) arguments to the command.
-# self.quantifier: If this command was mapped to the key "X" and
-#      the user pressed 6X, self.quantifier will be 6.
-# self.arg(n): The n-th argument, or an empty string if it doesn't exist.
-# self.rest(n): The n-th argument plus everything that followed.  For example,
-#      if the command was "search foo bar a b c", rest(2) will be "bar a b c"
-# self.start(n): Anything before the n-th argument.  For example, if the
-#      command was "search foo bar a b c", start(2) will be "search foo"
-#
-# ===================================================================
-# And this is a little reference for common ranger functions and objects:
-#
-# self.fm: A reference to the "fm" object which contains most information
-#      about ranger.
-# self.fm.notify(string): Print the given string on the screen.
-# self.fm.notify(string, bad=True): Print the given string in RED.
-# self.fm.reload_cwd(): Reload the current working directory.
-# self.fm.thisdir: The current working directory. (A File object.)
-# self.fm.thisfile: The current file. (A File object too.)
-# self.fm.thistab.get_selection(): A list of all selected files.
-# self.fm.execute_console(string): Execute the string as a ranger command.
-# self.fm.open_console(string): Open the console with the given string
-#      already typed in for you.
-# self.fm.move(direction): Moves the cursor in the given direction, which
-#      can be something like down=3, up=5, right=1, left=1, to=6, ...
-#
-# File objects (for example self.fm.thisfile) have these useful attributes and
-# methods:
-#
-# cf.path: The path to the file.
-# cf.basename: The base name only.
-# cf.load_content(): Force a loading of the directories content (which
-#      obviously works with directories only)
-# cf.is_directory: True/False depending on whether it's a directory.
-#
-# For advanced commands it is unavoidable to dive a bit into the source code
-# of ranger.
-# ===================================================================
-
 from ranger.api.commands import *
-
 
 class alias(Command):
     """:alias <newcommand> <oldcommand>
@@ -148,44 +62,35 @@ class cd(Command):
         bookmarks = [v.path for v in self.fm.bookmarks.dct.values()
                 if rel_dest in v.path]
 
-        # expand the tilde into the user directory
         if rel_dest.startswith('~'):
             rel_dest = expanduser(rel_dest)
 
-        # define some shortcuts
         abs_dest = join(cwd, rel_dest)
         abs_dirname = dirname(abs_dest)
         rel_basename = basename(rel_dest)
         rel_dirname = dirname(rel_dest)
 
         try:
-            # are we at the end of a directory?
             if rel_dest.endswith('/') or rel_dest == '':
                 _, dirnames, _ = next(os.walk(abs_dest))
 
-            # are we in the middle of the filename?
             else:
                 _, dirnames, _ = next(os.walk(abs_dirname))
                 dirnames = [dn for dn in dirnames
                         if dn.startswith(rel_basename)]
         except (OSError, StopIteration):
-            # os.walk found nothing
             pass
         else:
             dirnames.sort()
             if self.fm.settings.cd_bookmarks:
                 dirnames = bookmarks + dirnames
 
-            # no results, return None
             if len(dirnames) == 0:
                 return
 
-            # one result. since it must be a directory, append a slash.
             if len(dirnames) == 1:
                 return self.start(1) + join(rel_dirname, dirnames[0]) + '/'
 
-            # more than one result. append no slash, so the user can
-            # manually type in the slash to advance into that directory
             return (self.start(1) + join(rel_dirname, dirname) for dirname in dirnames)
 
 
@@ -421,7 +326,6 @@ class default_linemode(Command):
         if len(self.args) < 2:
             self.fm.notify("Usage: default_linemode [path=<regexp> | tag=<tag(s)>] <linemode>", bad=True)
 
-        # Extract options like "path=..." or "tag=..." from the command line
         arg1 = self.arg(1)
         method = "always"
         argument = None
@@ -434,17 +338,14 @@ class default_linemode(Command):
             argument = arg1[4:]
             self.shift()
 
-        # Extract and validate the line mode from the command line
         linemode = self.rest(1)
         if linemode not in FileSystemObject.linemode_dict:
             self.fm.notify("Invalid linemode: %s; should be %s" %
                     (linemode, "/".join(FileSystemObject.linemode_dict)), bad=True)
 
-        # Add the prepared entry to the fm.default_linemodes
         entry = [method, argument, linemode]
         self.fm.default_linemodes.appendleft(entry)
 
-        # Redraw the columns
         if hasattr(self.fm.ui, "browser"):
             for col in self.fm.ui.browser.columns:
                 col.need_redraw = True
@@ -772,7 +673,6 @@ class rename(Command):
 
         if self.fm.rename(self.fm.thisfile, new_name):
             f = File(new_name)
-            # Update bookmarks that were pointing on the previous name
             obsoletebookmarks = [b for b in self.fm.bookmarks
                                  if b[1].path == self.fm.thisfile]
             if obsoletebookmarks:
@@ -837,8 +737,6 @@ class chmod(Command):
                 self.fm.notify(ex)
 
         try:
-            # reloading directory.  maybe its better to reload the selected
-            # files only.
             self.fm.thisdir.load_content()
         except Exception:
             pass
@@ -861,7 +759,6 @@ class bulkrename(Command):
         from ranger.ext.shell_escape import shell_escape as esc
         py3 = sys.version_info[0] >= 3
 
-        # Create and edit the file list
         filenames = [f.relative_path for f in self.fm.thistab.get_selection()]
         listfile = tempfile.NamedTemporaryFile(delete=False)
         listpath = listfile.name
@@ -880,7 +777,6 @@ class bulkrename(Command):
             self.fm.notify("No renaming to be done!")
             return
 
-        # Generate script
         cmdfile = tempfile.NamedTemporaryFile()
         script_lines = []
         script_lines.append("# This file will be executed when you close the editor.\n")
@@ -894,18 +790,13 @@ class bulkrename(Command):
             cmdfile.write(script_content)
         cmdfile.flush()
 
-        # Open the script and let the user review it, then check if the script
-        # was modified by the user
         self.fm.execute_file([File(cmdfile.name)], app='editor')
         cmdfile.seek(0)
         script_was_edited = (script_content != cmdfile.read())
 
-        # Do the renaming
         self.fm.run(['/bin/sh', cmdfile.name], flags='w')
         cmdfile.close()
 
-        # Retag the files, but only if the script wasn't changed during review,
-        # because only then we know which are the source and destination files.
         if not script_was_edited:
             tags_changed = False
             for old, new in zip(filenames, new_filenames):
@@ -1176,7 +1067,6 @@ class scout(Command):
         if self.PERM_FILTER in flags:
             thisdir.filter = regex if pattern else None
 
-        # clean up:
         self.cancel()
 
         if self.OPEN_ON_ENTER in flags or \
@@ -1187,7 +1077,6 @@ class scout(Command):
                 self.fm.move(right=1)
 
         if self.KEEP_OPEN in flags and thisdir != self.fm.thisdir:
-            # reopen the console:
             if not pattern:
                 self.fm.open_console(self.line)
             else:
@@ -1226,7 +1115,6 @@ class scout(Command):
         if pattern == ".":
             return re.compile("")
 
-        # Handle carets at start and dollar signs at end separately
         if pattern.startswith('^'):
             pattern = pattern[1:]
             frmat = "^" + frmat
@@ -1234,7 +1122,6 @@ class scout(Command):
             pattern = pattern[:-1]
             frmat += "$"
 
-        # Apply one of the search methods
         if self.SM_REGEX in flags:
             regex = pattern
         elif self.SM_GLOB in flags:
@@ -1246,11 +1133,9 @@ class scout(Command):
 
         regex = frmat % regex
 
-        # Invert regular expression if necessary
         if self.INVERT in flags:
             regex = "^(?:(?!%s).)*$" % regex
 
-        # Compile Regular Expression
         options = re.UNICODE
         if self.IGNORE_CASE in flags or self.SMART_CASE in flags and \
                 pattern.islower():
@@ -1353,10 +1238,6 @@ class flat(Command):
         self.fm.thisdir.flat = level
         self.fm.thisdir.load_content()
 
-# Version control commands
-# --------------------------------
-
-
 class stage(Command):
     """
     :stage
@@ -1395,10 +1276,6 @@ class unstage(Command):
             self.fm.ui.vcsthread.process(self.fm.thisdir)
         else:
             self.fm.notify('Unable to unstage files: Not in repository')
-
-# Metadata commands
-# --------------------------------
-
 
 class prompt_metadata(Command):
     """
@@ -1481,6 +1358,5 @@ class linemode(default_linemode):
 
         self.fm.thisdir._set_linemode_of_children(mode)
 
-        # Ask the browsercolumns to redraw
         for col in self.fm.ui.browser.columns:
             col.need_redraw = True

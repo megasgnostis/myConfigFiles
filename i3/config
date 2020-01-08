@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:Ubuntu Sans Mono 20
+font pango:Ubuntu Sans Mono 23
 set $brightnessScriptPath ~/Desktop/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
 
 bar {
