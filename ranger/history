@@ -1,3 +1,6 @@
+find 5
+mkdir 4Helpful
+shell make clean
 shell make
 shell
 shell mac
@@ -19,7 +22,6 @@ e
 rename 2Palindrome.php
 ;
 open_with
-find 1
 shell chm
 rename 2Add.hs
 shell gh
@@ -31,20 +33,18 @@ shell temp ok.hs
 shell runhaskell 1.hs
 `
 shell 
+open_with 
 find .xm
 find 9
 shell `
 shell m
-<<<<<<< HEAD
 open_with cim
 open_with vim
 touch 4.py
-=======
-find Des
-find 2
-
-find 3
-mkdir NotForMe
-open_with 
->>>>>>> 8691ab555ee063bf7b0646513cb9b1ba3e9e5bdf
+shell S
+delete\
 delete
+find 2
+find 1
+find 3
+
