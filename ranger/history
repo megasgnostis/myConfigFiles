@@ -43,8 +43,8 @@ open_with vim
 touch 4.py
 shell S
 delete\
-delete
 find 2
 find 1
 find 3
 
+delete

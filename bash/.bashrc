@@ -61,7 +61,3 @@ fi
 PS1="\W> "
 set -o vi
 bind '"  ":vi-movement-mode'
-<<<<<<< HEAD
-
-=======
->>>>>>> 8691ab555ee063bf7b0646513cb9b1ba3e9e5bdf
