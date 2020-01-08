@@ -74,9 +74,3 @@ alias setLangs="setxkbmap -layout us,gr"
 alias changeLang="setxkbmap -option 'grp:ctrl_alt_toggle'"
 alias background="feh --bg-scale ~/Dropbox/3Other/nature.jpg"
 alias initialize="setLangs;changeLang;background"
-# exec_always setxkbmap -layout us,gr
-# exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
-# exec_always feh --bg-scale ~/Dropbox/3Other/nature.jpg
-# exec_always nm-applet
-# exec_always dropbox start
-# exec_always xrandr --output eDP-1 --mode 1600x900
