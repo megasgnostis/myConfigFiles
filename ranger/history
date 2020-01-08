@@ -1,8 +1,3 @@
-find 0
-find 6
-find 5
-mkdir 4Helpful
-shell make clean
 shell make
 shell
 shell mac
@@ -36,10 +31,6 @@ shell temp ok.hs
 shell runhaskell 1.hs
 `
 shell 
-<<<<<<< HEAD
-open_with 
-=======
->>>>>>> 8691ab555ee063bf7b0646513cb9b1ba3e9e5bdf
 find .xm
 find 9
 shell `
@@ -47,7 +38,6 @@ shell m
 <<<<<<< HEAD
 open_with cim
 open_with vim
-
 touch 4.py
 =======
 find Des
