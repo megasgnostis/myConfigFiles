@@ -72,4 +72,4 @@ exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
 exec_always feh --bg-scale ~/Dropbox/3Other/nature.jpg
 exec_always nm-applet
 exec_always dropbox start
-exec_always xrandr --output eDP-1 --mode 1600x900
+exec_always xrandr --output HDMI-1 --mode 1360x768 
