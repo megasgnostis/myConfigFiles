@@ -8,7 +8,6 @@ bar {
 
 floating_modifier $mod
 bindsym $mod+space focus mode_toggle
-
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
@@ -33,7 +32,6 @@ mode "resize" {
         bindsym j resize grow height 5 px or 5 ppt
         bindsym k resize shrink height 5 px or 5 ppt
         bindsym l resize grow width 5 px or 5 ppt
-
         bindsym space mode "default"
 }
 
@@ -59,16 +57,20 @@ bindsym $mod+Shift+4 move container to workspace 4
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle
+
 set $brightnessScriptPath /home/gnostis/Desktop/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
 bindsym XF86MonBrightnessUp exec $brightnessScriptPath +
 bindsym XF86MonBrightnessDown exec $brightnessScriptPath -
+
 bindsym Print exec gnome-screenshot -i 
 bindsym $mod+Print exec gnome-screenshot -a
 
 exec_always setxkbmap -layout us,gr
 exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
+
 exec_always feh --bg-scale ~/Dropbox/3Other/nature.jpg
 exec_always nm-applet
 exec_always dropbox start
+
 exec_always xrandr --output HDMI-1 --mode 1360x768 

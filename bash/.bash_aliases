@@ -8,7 +8,6 @@ bashAliasesFile="~/.bash_aliases"
 vimFile="~/.vimrc"
 i3File="~/.config/i3/config"
 XresourcesFile="~/.Xresources"
-
 alias vb="vim $bashFile"
 alias vba="vim $bashAliasesFile"
 alias vv="vim $vimFile"

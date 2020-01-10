@@ -37,14 +37,14 @@ find 9
 shell `
 shell m
 open_with cim
-open_with vim
 touch 4.py
 shell S
 delete\
 find 2
-find 1
 find 3
-
 mkdir 0PLCDescription
+
 delete
+open_with vim
 open_with 
+find 1
