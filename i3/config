@@ -1,6 +1,5 @@
 set $mod Mod4
 font pango:Ubuntu Sans Mono 23
-set $brightnessScriptPath ~/Desktop/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
 
 bar {
         position top
@@ -61,7 +60,7 @@ bindsym $mod+Shift+4 move container to workspace 4
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
-set $brightnessScriptPath /home/gnostis/Desktop/2Github/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
+set $brightnessScriptPath /home/gnostis/Desktop/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
 bindsym XF86MonBrightnessUp exec $brightnessScriptPath +
 bindsym XF86MonBrightnessDown exec $brightnessScriptPath -
 bindsym Print exec gnome-screenshot -i 
