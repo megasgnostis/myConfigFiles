@@ -44,7 +44,7 @@ find 2
 find 3
 mkdir 0PLCDescription
 
-delete
 open_with vim
 open_with 
 find 1
+delete
