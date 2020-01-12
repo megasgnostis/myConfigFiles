@@ -1,45 +1,39 @@
+! font
 URxvt.font: xft:monospace:size=12
+
+! scroll
 URxvt.scrollBar: false
-! special
+
+! colors
 *.foreground: White
 *.background: Black
 *.cursorColor: #afbfbf
-
-! black *.color0: #263640
-*.color8: #4a697d
-
-! red
 *.color1: #d12f2c
-*.color9: #fa3935
-
-! green
 *.color2: #819400
-*.color10: #a4bd00
-
-! yellow
 *.color3: #b08500
-*.color11: #d9a400
-
-! blue
 *.color4: #1D60A7
-*.color12: #2ca2f5
-
-! magenta
 *.color5: #696ebf
-*.color13: #8086e8
-
-! cyan
 *.color6: #289c93
-*.color14: #33c5ba
-
-! white
 *.color7: #bfbaac
+*.color8: #4a697d
+*.color9: #fa3935
+*.color10: #a4bd00
+*.color11: #d9a400
+*.color12: #2ca2f5
+*.color13: #8086e8
+*.color14: #33c5ba
 *.color15: #fdf6e3
 
+! Extensions
 URxvt.perl-ext-common:resize-font,edefault,clipboard,keyboard-select
-! URxvt.keysym.Control-Meta-v: builtin-string:
+
+! Don't rememeber
 URxvt.iso14755: False
+
+! Paste
 URxvt.keysym.Shift-Control-P: perl:clipboard:paste
+
+! Select from terminal
 URxvt.keysym.Shift-Control-V: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keyboard-select.clipboard: true

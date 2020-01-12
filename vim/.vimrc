@@ -1,5 +1,5 @@
 "detect, enable plugins and indent
-"filetype plugin indent on
+filetype plugin indent on
 "syntax highlihting
 syntax on
 "syntax off
