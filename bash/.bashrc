@@ -2,12 +2,16 @@ case $- in
     *i*) ;;
       *) return;;
 esac
+
 HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
+
 shopt -s checkwinsize
+
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
 	color_prompt=yes

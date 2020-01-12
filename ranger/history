@@ -1,8 +1,3 @@
-mkdir 4Helpful
-shell make clean
-shell make
-shell
-shell mac
 mkdir 1ToCheckOut
 l
 open_with 1
@@ -47,4 +42,9 @@ mkdir 0PLCDescription
 open_with vim
 open_with 
 find 1
+search 
+shell ./
+shell ./run1-5.sh
+mkdir 4Άλλα
+mkdir odir
 delete

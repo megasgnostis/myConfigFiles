@@ -31,15 +31,15 @@ alias cdToLastRangerDir="cd \"\`cat $HOME/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo ranger"
 
+# help scripts
+alias temp="$helpScriptsDir/1CopyTemplate.sh"
+alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
+
 # template files
 alias vTmpC="v $helpFilesDir/2TemplateFiles/1.c"
 alias vTmpSh="v $helpFilesDir/2TemplateFiles/2.sh"
 alias vTmpHs="v $helpFilesDir/2TemplateFiles/3.hs"
 alias vTmpMakefile="v $helpFilesDir/2TemplateFiles/Makefile"
-
-# help scripts
-alias temp="$helpScriptsDir/1CopyTemplate.sh"
-alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
 
 # git
 alias ga="git add ."
@@ -58,6 +58,7 @@ alias md="mkdir"
 alias sv="sudo vim"
 alias m="make"
 alias mc="make clean"
+alias mc_="make clean_"
 alias sai="sudo apt install"
 
 # open particular file 
@@ -72,3 +73,6 @@ alias sx="xrdb $XresourcesFile"
 rootAtLH="root@localhost" 
 utopiaPort="22223" 
 alias utopia="ssh -p $utopiaPort $rootAtLH"
+
+# executables
+alias exercises="/home/gnostis/Desktop/3StunningExecutables/1Exercises/4Executable"
