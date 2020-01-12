@@ -1,18 +1,25 @@
 "detect, enable plugins and indent
 filetype plugin indent on
+
 "syntax highlihting
 syntax on
 "syntax off
+
 "encoding
 set encoding=utf-8
+
 "relative numbers for moving around
 set number relativenumber
+
 "searh options
 set hlsearch incsearch ignorecase smartcase
+
 "tab options
 set expandtab tabstop=2 shiftwidth=2
+
 "autocomplete
 set wildmode=longest,list,full
+
 "indent same as previous line
 set autoindent
 
