@@ -73,6 +73,7 @@ alias sx="xrdb $XresourcesFile"
 rootAtLH="root@localhost" 
 utopiaPort="22223" 
 alias utopia="ssh -p $utopiaPort $rootAtLH"
+alias utopiafs="sshfs -p 22223 $rootAtLH:/root/3/guest /home/gnostis/Desktop/4OSlab/3VirtIO/1Code/virtio/guest2"
 
 # executables
 alias exercises="/home/gnostis/Desktop/3StunningExecutables/1Exercises/4Executable"

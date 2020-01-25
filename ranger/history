@@ -1,12 +1,9 @@
-mkdir 4StunningWebsite
-touch 1.hs
 mkdir ok
 touch 
 shell temp ok.hs
 shell runhaskell 1.hs
 `
 find .xm
-find 9
 shell `
 open_with cim
 touch 4.py
@@ -33,18 +30,21 @@ deleteh
 find 
 find virtio-cr
 delete\
-find s
-find 1
-shell mc
 open_with 
 find vi
 find hw
 find cha
 find cr
-find 4
 mkdir 5TheRest
-
 touch 2.txt
 delete
 find 5
+shell mc
+
+rename 1Uni
+find 4
 find 3
+find s
+find 9
+find 1
+mkdir 4Ηλεκτρονική1
