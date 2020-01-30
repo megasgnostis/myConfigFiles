@@ -24,6 +24,7 @@ alias initialize="setLangs;changeLang;background"
 alias rwf="sudo service network-manager restart"
 alias sound="alsamixer"
 alias battery="acpi"
+alias big="xrandr --output eDP-1 --mode 1360x768"
 
 # run ranger with aliases
 alias aliasesInRangerScript="$helpScriptsDir/2Ranger.sh"
@@ -34,12 +35,6 @@ alias sr="sudo ranger"
 # help scripts
 alias temp="$helpScriptsDir/1CopyTemplate.sh"
 alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
-
-# template files
-alias vTmpC="v $helpFilesDir/2TemplateFiles/1.c"
-alias vTmpSh="v $helpFilesDir/2TemplateFiles/2.sh"
-alias vTmpHs="v $helpFilesDir/2TemplateFiles/3.hs"
-alias vTmpMakefile="v $helpFilesDir/2TemplateFiles/Makefile"
 
 # git
 alias ga="git add ."
@@ -73,7 +68,7 @@ alias sx="xrdb $XresourcesFile"
 rootAtLH="root@localhost" 
 utopiaPort="22223" 
 alias utopia="ssh -p $utopiaPort $rootAtLH"
-alias utopiafs="sshfs -p 22223 $rootAtLH:/root/3/guest /home/gnostis/Desktop/4OSlab/3VirtIO/1Code/virtio/guest2"
+alias setutopia="/home/gnostis/Desktop/9Enviroment/1Utopia/utopia.sh -device virtio-cryptodev-pci"
 
 # executables
 alias exercises="/home/gnostis/Desktop/3StunningExecutables/1Exercises/4Executable"

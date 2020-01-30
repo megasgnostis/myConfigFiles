@@ -36,7 +36,7 @@ mode "resize" {
 
 # opening and closing stuff
 bindsym $mod+a exec urxvt
-bindsym $mod+s exec "google-chrome"
+bindsym $mod+s exec "brave-browser"
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 

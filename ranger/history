@@ -1,50 +1,50 @@
-mkdir ok
-touch 
-shell temp ok.hs
-shell runhaskell 1.hs
-`
-find .xm
-shell `
-open_with cim
-touch 4.py
-shell S
-mkdir 0PLCDescription
-open_with vim
-shell ./run1-5.sh
-mkdir 4Άλλα
-mkdir odir
-shell ./
-shell ./4Executable
-mkdir 2PDFs
-open_with
-shell mv
-rename socket-server.c
-search 
-shell ./socket-server
-find 2
-shell 
 shell nc
 shell m
 shell mcc
 deleteh
-find 
 find virtio-cr
 delete\
-open_with 
 find vi
-find hw
-find cha
 find cr
 mkdir 5TheRest
 touch 2.txt
-delete
-find 5
 shell mc
-
 rename 1Uni
-find 4
-find 3
 find s
-find 9
-find 1
 mkdir 4Ηλεκτρονική1
+rename Desktopl`
+shell vba
+mkdir scripts
+mkdir 4PDFs
+mkdir 1Code
+mkdir 2PDFs
+mkdir 0Environment
+mkdir sockets-crypto
+mkdir virtioUt
+mkdir 2GivenCode
+mkdir utDir
+find vir
+open_with 
+find virtio-crypto
+find 4
+find 9
+find qemu-
+find hw
+find cha
+find cryptodev.c
+touch 5UsefulCommands
+open_with vim
+find 
+mkdir host
+mkdir 3Report
+shell .
+shell ./hostScript.sh
+find 5
+find 1
+find 2
+find 3
+mkdir 2Σημειώσεις
+delete
+shell rwf
+
+shell big
