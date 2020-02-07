@@ -1,5 +1,3 @@
-mkdir 1Code
-mkdir 2PDFs
 mkdir 0Environment
 mkdir virtioUt
 mkdir 2GivenCode
@@ -47,4 +45,6 @@ mkdir OSLab
 mkdir Chess
 shell unzip The\ Illusionist\ \(2006\).zip 
 find 4
+l
+mkdir 1Λογική2
 delete
