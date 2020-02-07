@@ -72,3 +72,6 @@ alias setutopia="/home/gnostis/Desktop/9Enviroment/1Utopia/utopia.sh -device vir
 
 # executables
 alias exercises="/home/gnostis/Desktop/3StunningExecutables/1Exercises/4Executable"
+
+# OSLab
+alias runClient="./socket-client localhost 35001"

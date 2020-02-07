@@ -1,50 +1,50 @@
-shell nc
-shell m
-shell mcc
-deleteh
-find virtio-cr
-delete\
-find vi
-find cr
-mkdir 5TheRest
-touch 2.txt
-shell mc
-rename 1Uni
-find s
-mkdir 4Ηλεκτρονική1
-rename Desktopl`
-shell vba
-mkdir scripts
-mkdir 4PDFs
 mkdir 1Code
 mkdir 2PDFs
 mkdir 0Environment
-mkdir sockets-crypto
 mkdir virtioUt
 mkdir 2GivenCode
 mkdir utDir
 find vir
 open_with 
 find virtio-crypto
-find 4
 find 9
 find qemu-
 find hw
 find cha
 find cryptodev.c
 touch 5UsefulCommands
-open_with vim
-find 
 mkdir host
-mkdir 3Report
 shell .
 shell ./hostScript.sh
-find 5
-find 1
-find 2
-find 3
 mkdir 2Σημειώσεις
-delete
 shell rwf
-
 shell big
+find 
+shell unzip Θεωρία Δικτύων και Κυκλωμάτων.zip
+rename ΘΔ
+find 191219
+find 5
+find 2
+rename 0Environment
+shell grep -r module_param 1Riddle 2Netdriver 
+mkdir 1Κορμός
+mkdir 2ΡοήΛ
+shell vmstat
+shell gh
+shell 
+shell ./2
+shell ./solveRiddles.sh
+
+mkdir 3Report
+mkdir sockets-crypto
+shell mc
+shell m
+find 3
+find 1
+open_with vim
+open_with j
+mkdir OSLab
+mkdir Chess
+shell unzip The\ Illusionist\ \(2006\).zip 
+find 4
+delete
