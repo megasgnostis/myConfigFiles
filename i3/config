@@ -40,11 +40,13 @@ bindsym $mod+s exec "brave-browser"
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 
-# useful stuff
+# fullsreecn and restart
 bindsym $mod+z fullscreen toggle
 bindsym $mod+x restart
-bindsym $mod+c split h
-bindsym $mod+v split v
+
+# Splitting
+bindsym $mod+c split h #horizantally
+bindsym $mod+v split v #vertically
 
 # moving stuff
 bindsym $mod+h focus left

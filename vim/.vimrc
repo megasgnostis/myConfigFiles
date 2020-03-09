@@ -57,10 +57,10 @@ set autoindent
   "remove highlighting
   nmap <Space>h :noh<CR>
   "save and make
-  nmap <Space>m :w<CR>:! cd ../../2Make; make<CR>
+  nmap <Space>m :w<CR>:! cd ../..; make<CR>
   "execute
   nmap <Space>x :! ../../4Executable<CR>
-  "execute
+  "better closing without saving
   nmap <Space>q :q!<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk

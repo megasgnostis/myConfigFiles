@@ -25,6 +25,7 @@ alias rwf="sudo service network-manager restart"
 alias sound="alsamixer"
 alias battery="acpi"
 alias big="xrandr --output eDP-1 --mode 1360x768"
+alias mirror='xrandr --output HDMI-1 --mode 1360x768 --output eDP-1 --mode 1920x1080 --same-as HDMI-1'
 
 # run ranger with aliases
 alias aliasesInRangerScript="$helpScriptsDir/2Ranger.sh"
@@ -72,6 +73,7 @@ alias setutopia="/home/gnostis/Desktop/9Enviroment/1Utopia/utopia.sh -device vir
 
 # executables
 alias exercises="/home/gnostis/Desktop/3StunningExecutables/1Exercises/4Executable"
+alias grades="/home/gnostis/Desktop/3StunningExecutables/2Grades/1ShowGrades < /home/gnostis/Desktop/3StunningExecutables/2Grades/grades.csv"
 
 # OSLab
 alias runClient="./socket-client localhost 35001"

@@ -1,23 +1,6 @@
-mkdir 0Environment
-mkdir virtioUt
-mkdir 2GivenCode
-mkdir utDir
-find vir
-open_with 
-find virtio-crypto
-find 9
-find qemu-
-find hw
-find cha
-find cryptodev.c
-touch 5UsefulCommands
-mkdir host
-shell .
 shell ./hostScript.sh
 mkdir 2Σημειώσεις
-shell rwf
 shell big
-find 
 shell unzip Θεωρία Δικτύων και Κυκλωμάτων.zip
 rename ΘΔ
 find 191219
@@ -28,18 +11,11 @@ shell grep -r module_param 1Riddle 2Netdriver
 mkdir 1Κορμός
 mkdir 2ΡοήΛ
 shell vmstat
-shell gh
 shell 
 shell ./2
 shell ./solveRiddles.sh
-
 mkdir 3Report
 mkdir sockets-crypto
-shell mc
-shell m
-find 3
-find 1
-open_with vim
 open_with j
 mkdir OSLab
 mkdir Chess
@@ -47,4 +23,28 @@ shell unzip The\ Illusionist\ \(2006\).zip
 find 4
 l
 mkdir 1Λογική2
+shell unzip p
+deleteD
+r /g
+shell ./run.sh
+open_with kkk
+shell rwf
+mkdir gnostisDir
+touch gnostisFile
+open_with vim
+find 3
+find 1
+shell grep -r repeat
+delete\
+mkdir OldSubs
+mkdir 2Project
+mkdir 2Transactions
+find 
+open_with 
+touch 3Edit.hs
+
+shell gh
 delete
+shell mc
+shell m
+shell mc_
