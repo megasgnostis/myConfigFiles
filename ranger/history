@@ -39,7 +39,6 @@ find 9
 shell gh
 shell python3 block.py
 find pr
-delete
 shell  
 shell ./runAll.sh
 find dist
@@ -48,3 +47,4 @@ open_with
 shell m
 find 3
 find 1
+delete
