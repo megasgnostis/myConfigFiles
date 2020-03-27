@@ -39,7 +39,7 @@ alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
 
 # git
 alias ga="git add ."
-alias gc="git commit -m 'm'"
+alias gc="git commit -m 'I am an automated comment'"
 alias gps="git push"
 alias gh="ga;gc;gps"
 alias gpl="git pull"
@@ -56,6 +56,8 @@ alias m="make"
 alias mc="make clean"
 alias mc_="make clean_"
 alias sai="sudo apt install"
+alias py="python3"
+alias pip="python3 -m pip"
 
 # open particular file 
 vimCheatImageFile="$helpFilesDir/3Vim/2VimCheat.png"

@@ -62,6 +62,8 @@ set autoindent
   nmap <Space>x :! ../../4Executable<CR>
   "better closing without saving
   nmap <Space>q :q!<CR>
+  "run all script
+  nmap <Space>r :! ./runAll.sh<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 

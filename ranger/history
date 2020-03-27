@@ -1,8 +1,3 @@
-find 5
-find 2
-rename 0Environment
-shell grep -r module_param 1Riddle 2Netdriver 
-mkdir 1Κορμός
 mkdir 2ΡοήΛ
 shell vmstat
 shell 
@@ -25,26 +20,31 @@ open_with kkk
 shell rwf
 mkdir gnostisDir
 touch gnostisFile
-find 3
-find 1
 shell grep -r repeat
 delete\
 mkdir OldSubs
 mkdir 2Project
 mkdir 2Transactions
 find 
-open_with 
 touch 3Edit.hs
-
 shell mc_
 shell ./4Executable
-shell gh
 mkdir 6UsefulForActions.hs
 touch 6UsefulForActions.hs
 touch .gitignore
 open_with vim
-shell m
 touch toAvoidDeletion
-shell mc
 find 9
+
+shell gh
+shell python3 block.py
+find pr
 delete
+shell  
+shell ./runAll.sh
+find dist
+shell mc
+open_with 
+shell m
+find 3
+find 1

@@ -45,8 +45,8 @@ bindsym $mod+z fullscreen toggle
 bindsym $mod+x restart
 
 # Splitting
-bindsym $mod+c split h #horizantally
-bindsym $mod+v split v #vertically
+bindsym $mod+c split h
+bindsym $mod+v split v
 
 # moving stuff
 bindsym $mod+h focus left
@@ -65,11 +65,6 @@ bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
-
-# Sound
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Brightness
 set $brightnessScriptPath /home/gnostis/Desktop/2StunningHelpFiles/1Scripts/5ControlBrightness.sh
@@ -92,4 +87,4 @@ exec_always nm-applet
 
 # Resolution
 exec_always xrandr --output HDMI-1 --mode 1360x768 
-exec_always xrandr --output eDP-1 --mode 1600x900
+exec_always xrandr --output eDP-1 --mode 1360x768
