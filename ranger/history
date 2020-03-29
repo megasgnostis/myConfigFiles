@@ -1,21 +1,3 @@
-mkdir 2ΡοήΛ
-shell vmstat
-shell 
-shell ./2
-shell ./solveRiddles.sh
-mkdir 3Report
-mkdir sockets-crypto
-open_with j
-mkdir OSLab
-mkdir Chess
-shell unzip The\ Illusionist\ \(2006\).zip 
-find 4
-l
-mkdir 1Λογική2
-shell unzip p
-deleteD
-r /g
-shell ./run.sh
 open_with kkk
 shell rwf
 mkdir gnostisDir
@@ -32,13 +14,9 @@ shell ./4Executable
 mkdir 6UsefulForActions.hs
 touch 6UsefulForActions.hs
 touch .gitignore
-open_with vim
 touch toAvoidDeletion
 find 9
-
-shell gh
 shell python3 block.py
-find pr
 shell  
 shell ./runAll.sh
 find dist
@@ -47,4 +25,26 @@ open_with
 shell m
 find 3
 find 1
+mkdir 1AttempingTruth
+touch 1Childhood
+touch 2Problematic
+touch The end of unending emptiness
+touch 4EmptinessAgain
+touch 5ConversationsWithSelf
+touch 6AttemptingTruth
+touch 7SelfEducation
+touch 8ExactlyEnough
+touch 9EverythingRepeats
+touch 10HonestAndFearless
+open_with vim
+shell
+
+mkdir 0Block
+shell grep -r block
+touch __init__.py
+shell py blockchain.py
+search qq
 delete
+shell 
+shell gh
+find pr
