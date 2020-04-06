@@ -43,8 +43,8 @@ shell grep -r block
 touch __init__.py
 shell py blockchain.py
 search qq
-delete
 shell 
 find pr
 find 5
 shell gh
+delete
