@@ -47,3 +47,5 @@ fi
 PS1="\W> "
 set -o vi
 bind '"  ":vi-movement-mode'
+VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
+

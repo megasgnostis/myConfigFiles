@@ -1,4 +1,3 @@
-open_with kkk
 shell rwf
 mkdir gnostisDir
 touch gnostisFile
@@ -46,5 +45,6 @@ shell py blockchain.py
 search qq
 delete
 shell 
-shell gh
 find pr
+find 5
+shell gh
