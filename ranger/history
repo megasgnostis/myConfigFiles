@@ -22,7 +22,6 @@ find dist
 shell mc
 open_with 
 shell m
-find 3
 find 1
 mkdir 1AttempingTruth
 touch 1Childhood
@@ -45,6 +44,7 @@ shell py blockchain.py
 search qq
 shell 
 find pr
+delete
+find 3
 find 5
 shell gh
-delete

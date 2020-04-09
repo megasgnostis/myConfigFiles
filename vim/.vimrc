@@ -63,7 +63,7 @@ set autoindent
   "better closing without saving
   nmap <Space>q :q!<CR>
   "run all script
-  nmap <Space>r :! ./runAll.sh<CR>
+  nmap <Space>r :! python3 %<CR>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
 

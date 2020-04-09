@@ -86,5 +86,4 @@ exec_always feh --bg-scale ~/Desktop/5TheRest/3Other/nature.jpg
 exec_always nm-applet
 
 # Resolution
-exec_always xrandr --output HDMI-1 --mode 1360x768 
-exec_always xrandr --output eDP-1 --mode 1360x768
+exec_always xrandr --output HDMI-1 --mode 1360x768 --output eDP-1 --mode 1360x768 --same-as HDMI-1
