@@ -1,6 +1,7 @@
 # dirs
 helpFilesDir="~/Desktop/2StunningHelpFiles"
 helpScriptsDir="$helpFilesDir/1Scripts"
+rangerScriptsDir="/home/gnostis/Desktop/1StunningConfigFiles/ranger/scripts"
 
 # edit particular config file
 bashFile="~/.bashrc"
@@ -28,14 +29,14 @@ alias big="xrandr --output eDP-1 --mode 1360x768"
 alias mirror='xrandr --output HDMI-1 --mode 1360x768 --output eDP-1 --mode 1360x768 --same-as HDMI-1'
 
 # run ranger with aliases
-alias aliasesInRangerScript="$helpScriptsDir/2Ranger.sh"
+alias aliasesInRangerScript="$rangerScriptsDir/1Ranger.sh"
 alias cdToLastRangerDir="cd \"\`cat $HOME/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo ranger"
 
 # help scripts
 alias temp="$helpScriptsDir/1CopyTemplate.sh"
-alias dirReplace="$helpScriptsDir/4ReplaceInDir.sh"
+alias dirReplace="$helpScriptsDir/2ReplaceInDir.sh"
 
 # git
 alias ga="git add ."
@@ -67,15 +68,6 @@ alias vcp="xdg-open &> /dev/null $vimCheatImageFile &"
 alias sb="source $bashFile"
 alias sx="xrdb $XresourcesFile"
 
-# ssh
-rootAtLH="root@localhost" 
-utopiaPort="22223" 
-alias utopia="ssh -p $utopiaPort $rootAtLH"
-alias setutopia="/home/gnostis/Desktop/9Enviroment/1Utopia/utopia.sh -device virtio-cryptodev-pci"
-
 # executables
 alias exercises="/home/gnostis/Desktop/3StunningExecutables/1Exercises/4Executable"
 alias grades="/home/gnostis/Desktop/3StunningExecutables/2Grades/1ShowGrades < /home/gnostis/Desktop/3StunningExecutables/2Grades/grades.csv"
-
-# OSLab
-alias runClient="./socket-client localhost 35001"

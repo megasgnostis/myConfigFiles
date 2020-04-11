@@ -1,4 +1,3 @@
-shell rwf
 mkdir gnostisDir
 touch gnostisFile
 shell grep -r repeat
@@ -44,7 +43,8 @@ shell py blockchain.py
 search qq
 shell 
 find pr
-delete
 find 3
 find 5
+mkdir myscripts
+delete
 shell gh
