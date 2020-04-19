@@ -59,6 +59,7 @@ alias mc_="make clean_"
 alias sai="sudo apt install"
 alias py="python3"
 alias pip="python3 -m pip"
+alias bye="shutdown 0"
 
 # open particular file 
 vimCheatImageFile="$helpFilesDir/3Vim/2VimCheat.png"

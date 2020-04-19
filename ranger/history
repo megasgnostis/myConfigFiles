@@ -1,26 +1,10 @@
-mkdir gnostisDir
-touch gnostisFile
-shell grep -r repeat
-delete\
-mkdir OldSubs
-mkdir 2Project
-mkdir 2Transactions
-find 
-touch 3Edit.hs
-shell mc_
-shell ./4Executable
-mkdir 6UsefulForActions.hs
-touch 6UsefulForActions.hs
-touch .gitignore
 touch toAvoidDeletion
-find 9
 shell python3 block.py
 shell  
 shell ./runAll.sh
 find dist
 shell mc
 open_with 
-shell m
 find 1
 mkdir 1AttempingTruth
 touch 1Childhood
@@ -35,7 +19,6 @@ touch 9EverythingRepeats
 touch 10HonestAndFearless
 open_with vim
 shell
-
 mkdir 0Block
 shell grep -r block
 touch __init__.py
@@ -43,8 +26,25 @@ shell py blockchain.py
 search qq
 shell 
 find pr
-find 3
 find 5
 mkdir myscripts
+mkdir 2Semantic
+mkdir odir
+touch tem
+shell temp webscraping.py
+search o
+find op
+find la
+mkdir knowledgable
+find ht
+find 2
+find 4
+find 9
+shell m
+shell gpl
+
+mkdir 4ΡοήΜ
+mkdir 1ΘεωρίαΓραφημάτων
 delete
+find 3
 shell gh
