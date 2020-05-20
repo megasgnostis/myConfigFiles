@@ -61,10 +61,12 @@ bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
 
 # Brightness
 set $brightnessScriptPath /home/gnostis/Desktop/1StunningConfigFiles/i3/scripts/1ControlBrightness.sh 
@@ -86,4 +88,4 @@ exec_always feh --bg-scale ~/Desktop/4TheRest/3Other/nature.jpg
 exec_always nm-applet
 
 # Resolution
-exec_always xrandr --output HDMI-1 --mode 1360x768 --output eDP-1 --mode 1360x768 --same-as HDMI-1
+#exec_always xrandr --output eDP-1 --mode 1360x768
