@@ -7,7 +7,7 @@ fuction gh {
 }
 
 gh
-cd ../0PCLCompiler
+cd "../0PCLCompiler"
 gh
 cd ../2StunningHelpFiles
 gh
