@@ -17,3 +17,4 @@ do
   mv $configs/$dir $configBackupsPath
   ln -s $stunningConfigs/$dir $configs/$dir
 done
+source "$HOME/.bashrc"

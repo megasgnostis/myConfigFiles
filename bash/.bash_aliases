@@ -61,6 +61,8 @@ alias py="python3"
 alias pip="python3 -m pip"
 alias bye="shutdown 0"
 alias ..="cd .."
+alias cb="cabal build"
+alias cr="cabal repl"
 
 # open particular file 
 vimCheatImageFile="$helpFilesDir/3Vim/2VimCheat.png"

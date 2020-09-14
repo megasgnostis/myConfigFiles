@@ -27,7 +27,7 @@ URxvt.scrollBar: false
 ! Extensions
 URxvt.perl-ext-common:resize-font,edefault,clipboard,keyboard-select
 
-! Don't rememeber
+! Dont rememeber
 URxvt.iso14755: False
 
 ! Paste
