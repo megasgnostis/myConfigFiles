@@ -22,3 +22,6 @@ git add .
 git commit -m 'I am an automated comment'
 git push
 cd ../4TheRest
+git add .
+git commit -m 'I am an automated comment'
+git push
