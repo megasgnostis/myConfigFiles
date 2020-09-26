@@ -1,5 +1,3 @@
-find op
-find la
 mkdir knowledgable
 find ht
 find 9
@@ -48,3 +46,5 @@ shell temp fermat.hs
 delete
 
 shell temp gh.sh
+mkdir 1Ασκήσεις
+mkdir 2ΠαλιάΘέματα
