@@ -1,6 +1,3 @@
-mkdir knowledgable
-find ht
-find 9
 shell m
 shell gpl
 mkdir 4ΡοήΜ
@@ -22,7 +19,6 @@ shell find /home/gnostis/ -name "4*"
 shell glcn git@github.com:CodeWizardDiSar/4TheRest.git
 search na
 shell gh
-open_with 
 find k
 `
 touch Hanoi.pcl
@@ -43,8 +39,12 @@ find 3
 find 4
 touch 
 shell temp fermat.hs
-delete
-
 shell temp gh.sh
 mkdir 1Ασκήσεις
 mkdir 2ΠαλιάΘέματα
+open_with okular
+open_with 
+find l
+
+delete
+open_with h
