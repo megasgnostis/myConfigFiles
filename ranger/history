@@ -38,7 +38,6 @@ mkdir 1Ασκήσεις
 mkdir 2ΠαλιάΘέματα
 open_with okular
 find l
-delete
 open_with h
 mkdir 3CTests
 
@@ -48,3 +47,4 @@ mkdir 1ΘεωρίαΠληροφορίας
 mkdir 1Papaspirou
 mkdir 2ΔικάΜας
 mkdir 3Wrong
+delete
