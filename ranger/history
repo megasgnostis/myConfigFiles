@@ -1,7 +1,3 @@
-shell mc
-shell temp 2.ltx
-mkdir 3IR
-touch ir.hs
 open_with j
 mkdir 1
 mkdir 2
@@ -30,7 +26,6 @@ find us
 find 7
 rename JustPlaying.hs
 find 3
-find 4
 touch 
 shell temp fermat.hs
 shell temp gh.sh
@@ -40,11 +35,16 @@ open_with okular
 find l
 open_with h
 mkdir 3CTests
-
-open_with 
 mkdir 3Ελεύθερα
 mkdir 1ΘεωρίαΠληροφορίας
 mkdir 1Papaspirou
 mkdir 2ΔικάΜας
 mkdir 3Wrong
+mkdir testScripts
+jj
+γ
 delete
+
+find 4
+open_with 
+search Code
