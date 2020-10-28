@@ -1,10 +1,3 @@
-mkdir 1
-mkdir 2
-find 2
-find 1
-shell vba
-shell 
-shell find /home/gnostis/ -name "4*"
 shell glcn git@github.com:CodeWizardDiSar/4TheRest.git
 search na
 shell gh
@@ -43,8 +36,15 @@ mkdir testScripts
 jj
 γ
 
-find 4
-open_with 
 search Code
-delete
 open_with ``
+rename ProceduresHard.pcl
+open_with 4
+find 4
+mkdir 5ExecutableScripts
+rename Makefil
+open_with 
+mkdir scirouter
+mkdir 1
+delete
+shell temp 1.ltx

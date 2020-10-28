@@ -75,3 +75,7 @@ alias sx="xrdb $XresourcesFile"
 # executables
 alias exercises="/home/gnostis/Desktop/3StunningExecutables/1Exercises/4Executable"
 alias grades="/home/gnostis/Desktop/3StunningExecutables/2Grades/1ShowGrades < /home/gnostis/Desktop/3StunningExecutables/2Grades/grades.csv"
+
+# uni
+alias parlab="ssh parlab02@orion.cslab.ece.ntua.gr"
+alias parlabfs="sshfs -o IdentityFile=~/.ssh/id_rsa parlab02@orion.cslab.ece.ntua.gr:/home/parallel/parlab02/scirouter scirouter"
