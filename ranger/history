@@ -1,3 +1,5 @@
+shell 
+shell find /home/gnostis/ -name "4*"
 shell glcn git@github.com:CodeWizardDiSar/4TheRest.git
 search na
 shell gh
@@ -43,8 +45,6 @@ open_with 4
 find 4
 mkdir 5ExecutableScripts
 rename Makefil
-open_with 
-mkdir scirouter
-mkdir 1
 delete
-shell temp 1.ltx
+mkdir scirouter
+open_with 
