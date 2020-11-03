@@ -9,10 +9,6 @@
 git add .
 git commit -m 'I am an automated comment'
 git push
-cd "../0PCLCompiler"
-git add .
-git commit -m 'I am an automated comment'
-git push
 cd ../2StunningHelpFiles
 git add .
 git commit -m 'I am an automated comment'

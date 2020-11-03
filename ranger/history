@@ -1,7 +1,3 @@
-shell 
-shell find /home/gnostis/ -name "4*"
-shell glcn git@github.com:CodeWizardDiSar/4TheRest.git
-search na
 shell gh
 find k
 `
@@ -10,7 +6,6 @@ touch Primes.pcl
 touch Reverse.pcl
 touch BubbleSort.pcl
 touch Mean.pcl
-open_with vim
 llkjjjjkkjjqqq
 rename 0PCLqqqqq
 find Em
@@ -45,6 +40,11 @@ open_with 4
 find 4
 mkdir 5ExecutableScripts
 rename Makefil
-delete
 mkdir scirouter
+rename 1.tex
+mkdir 1Exs
+open_with vim
 open_with 
+mkdir 
+touch keepmegithub
+delete
