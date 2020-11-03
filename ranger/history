@@ -1,5 +1,3 @@
-shell gh
-find k
 `
 touch Hanoi.pcl
 touch Primes.pcl
@@ -44,7 +42,9 @@ mkdir scirouter
 rename 1.tex
 mkdir 1Exs
 open_with vim
-open_with 
 mkdir 
 touch keepmegithub
+open_with `
+open_with 
+rename 3Ελεύθεραjj
 delete
