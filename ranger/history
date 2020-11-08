@@ -1,4 +1,3 @@
-touch Hanoi.pcl
 touch Primes.pcl
 touch Reverse.pcl
 touch BubbleSort.pcl
@@ -47,4 +46,5 @@ open_with `
 rename 3Ελεύθεραjj
 mkdir 4ΡοήΜ
 open_with 
+deletey
 delete
