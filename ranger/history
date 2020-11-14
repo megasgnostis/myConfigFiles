@@ -1,3 +1,4 @@
+touch Primes.pcl
 touch Reverse.pcl
 touch BubbleSort.pcl
 touch Mean.pcl
@@ -38,13 +39,12 @@ rename Makefil
 mkdir scirouter
 rename 1.tex
 mkdir 1Exs
+open_with vim
 mkdir 
 touch keepmegithub
 open_with `
 rename 3Ελεύθεραjj
 mkdir 4ΡοήΜ
-open_with 
 deletey
 delete
-touch .gitignore
-open_with vim
+open_with 
