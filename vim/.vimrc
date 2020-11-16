@@ -62,7 +62,7 @@ set autoindent
   nmap <Space>x :! ../../4Executable<CR>
   "better closing without saving
   nmap <Space>q :q!<CR>
-  "run all script
+  "replace all occurences of word under cursor
   nmap <Space>r :%s/\<<C-r><C-w>\>//g<Left><Left>
   
 "If system clipboard copy and paste doesn't work install vim-gtk
@@ -74,6 +74,8 @@ set autoindent
   vmap <Space><Space> <Esc>
   "space before
   vmap <Space>i I<Space><Esc>
+  "replace all occurences of word under cursor
+  vmap <Space>r "hy:%s/<C-r>h//g<Left><Left>
 
 "command line mode maps
   "better way to normal mode
