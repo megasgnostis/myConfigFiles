@@ -1,5 +1,3 @@
-touch Primes.pcl
-touch Reverse.pcl
 touch BubbleSort.pcl
 touch Mean.pcl
 llkjjjjkkjjqqq
@@ -14,7 +12,6 @@ find 3
 touch 
 shell temp fermat.hs
 shell temp gh.sh
-mkdir 1Ασκήσεις
 mkdir 2ΠαλιάΘέματα
 open_with okular
 find l
@@ -46,5 +43,8 @@ rename 3Ελεύθεραjj
 mkdir 4ΡοήΜ
 deletey
 open_with 
-delete
 
+mkdir 1Ασκήσεις
+delete
+mkdir 2Υλικό
+find 2l
