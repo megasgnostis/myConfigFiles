@@ -1,5 +1,3 @@
-shell ca
-rename Semsq`.hs
 find us
 find 7
 rename JustPlaying.hs
@@ -40,11 +38,13 @@ deletey
 mkdir 1Ασκήσεις
 mkdir 2Υλικό
 find 2l
-open_with 
 mkdir GameOfLife
-
 mkdir 1Standard
 mkdir 2Recursive
 mkdir 3Tiled
-delete
+open_with   k
+open_with 
+
 shell mc
+mkdir 6thTry
+delete
