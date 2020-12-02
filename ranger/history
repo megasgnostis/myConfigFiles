@@ -1,7 +1,3 @@
-find us
-find 7
-rename JustPlaying.hs
-find 3
 touch 
 shell temp fermat.hs
 shell temp gh.sh
@@ -44,7 +40,11 @@ mkdir 2Recursive
 mkdir 3Tiled
 open_with   k
 open_with 
-
-shell mc
 mkdir 6thTry
+shell parlabfs
+mkdir 2
+
+shell 
+shell mc
+shell chmod 700 testParallel.sh
 delete
