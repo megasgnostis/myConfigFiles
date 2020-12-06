@@ -26,7 +26,7 @@ alias rwf="sudo service network-manager restart"
 alias sound="alsamixer"
 alias battery="acpi"
 alias big="xrandr --output eDP-1 --mode 1360x768"
-alias mirror='xrandr --output HDMI-1 --mode 1360x768 --output eDP-1 --mode 1360x768 --same-as HDMI-1'
+alias mirror='xrandr --output  eDP-1 --same-as HDMI-1'
 
 # run ranger with aliases
 alias aliasesInRangerScript="$rangerScriptsDir/1Ranger.sh"
