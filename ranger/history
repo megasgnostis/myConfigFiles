@@ -1,5 +1,3 @@
-mkdir 2ΔικάΜας
-mkdir 3Wrong
 mkdir testScripts
 jj
 γ
@@ -41,10 +39,12 @@ find sc
 mkdir 0Simple
 mkdir 2SimpleNew
 mkdir 3SimpleNewPrivate
+open_with 
+delete
+shell 
 shell mc
 shell mc_
-
-shell 
-open_with 
+find 3
+find 1
 shell parlabfs
-delete
+
