@@ -1,5 +1,3 @@
-mkdir testScripts
-jj
 γ
 search Code
 open_with ``
@@ -30,7 +28,6 @@ mkdir 2
 shell chmod 700 testParallel.sh
 mkdir 4Scripts
 shell make clean
-open_with vim
 ;'
 shell ./gh.sh
 shell p
@@ -39,12 +36,15 @@ find sc
 mkdir 0Simple
 mkdir 2SimpleNew
 mkdir 3SimpleNewPrivate
-open_with 
-delete
 shell 
-shell mc
-shell mc_
-find 3
 find 1
 shell parlabfs
+shell mc_
+find 3
 
+open_with 
+open_with '
+open_with vim
+shell rm *.err *.out
+shell mc
+delete
