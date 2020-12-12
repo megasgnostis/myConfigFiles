@@ -1,7 +1,3 @@
-find 4
-mkdir 5ExecutableScripts
-rename Makefil
-mkdir scirouter
 rename 1.tex
 mkdir 1Exs
 mkdir 
@@ -30,21 +26,25 @@ find sc
 mkdir 0Simple
 mkdir 2SimpleNew
 mkdir 3SimpleNewPrivate
-shell 
 find 1
 shell parlabfs
-shell mc_
 open_with '
-open_with vim
 shell rm *.err *.out
-shell mc
 mkdir 4Γενικά
 shell clear_co
-open_with 
 shell r
 mkdir 1
 mkdir 2
 find 3
-
-delete
 search
+mkdir code
+mkdir executables
+touch Main.elm
+open_with vim
+
+shell 
+open_with 
+delete
+shell m
+shell mc_
+shell mc

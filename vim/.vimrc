@@ -86,7 +86,7 @@ set autoindent
 
 "general maps
   "paste from clipboard
-  map <C-p> "+P
+  map <C-p> "+p
 
 "no autocomment
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

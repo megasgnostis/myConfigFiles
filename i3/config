@@ -20,8 +20,6 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
 
 # layout stuff
-bindsym $mod+q layout stacking
-bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # Sizing stuff
@@ -61,12 +59,10 @@ bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
 
 # Brightness
 set $brightnessScriptPath /home/gnostis/Desktop/1StunningConfigFiles/i3/scripts/1ControlBrightness.sh 
@@ -86,6 +82,3 @@ exec_always feh --bg-scale /home/gnostis/Desktop/1StunningConfigFiles/nature.jpg
 
 # Network monitor
 exec_always nm-applet
-
-# Resolution
-#exec_always xrandr --output eDP-1 --mode 1360x768
