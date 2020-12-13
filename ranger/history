@@ -42,9 +42,9 @@ open_with vim
 open_with 
 shell m
 rename   run.out
-delete
 open_with jh
 shell 
 shell mc_
 shell mc
+delete
 
