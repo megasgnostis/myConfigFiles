@@ -1,15 +1,8 @@
-"detect, enable plugins and indent
-"filetype plugin indent on
-
 "syntax highlihting
 syntax on
-"syntax off
 
 "encoding
 set encoding=utf-8
-
-"relative numbers for moving around
-"set number relativenumber
 
 "searh options
 set hlsearch incsearch ignorecase smartcase
@@ -18,7 +11,6 @@ set hlsearch incsearch ignorecase smartcase
 set expandtab tabstop=2 shiftwidth=2
 
 "autocomplete
-"set wildmode=longest,list,full
 set wildmode=full
 
 "indent same as previous line
@@ -33,6 +25,7 @@ set autoindent
   "j k navigation in autocomplete
   inoremap <expr> j pumvisible() ? "\<C-N>" : "j"
   inoremap <expr> k pumvisible() ? "\<C-P>" : "k"
+  "bette way to go to normal mode
   inoremap <Space><Space> <Esc>
 
 "normal mode maps 
@@ -75,7 +68,7 @@ set autoindent
 
 "command line mode maps
   "edit previous commands
-  "last line = command executed with enter
+  "executes last line with enter
   cnoremap <Space>e <C-f>
 
 "general maps
@@ -83,10 +76,14 @@ set autoindent
   noremap <Space><Space> <Esc>
   "paste from clipboard
   noremap <C-p> "+p
-  "paste from clipboard
-  noremap <space>j <C-w>j
-  "paste from clipboard
-  noremap <space>k <C-w>k
+  "vim window down
+  noremap <space>J <C-w>j
+  "vim window up
+  noremap <space>K <C-w>k
+  "half page down
+  noremap <space>j <C-d>
+  "half page up
+  noremap <space>k <C-u>
 
 "no autocomment
   autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
