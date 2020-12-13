@@ -33,6 +33,7 @@ set autoindent
   "j k navigation in autocomplete
   inoremap <expr> j pumvisible() ? "\<C-N>" : "j"
   inoremap <expr> k pumvisible() ? "\<C-P>" : "k"
+  inoremap <Space><Space> <Esc>
 
 "normal mode maps 
   "empty line after
@@ -57,7 +58,9 @@ set autoindent
   nnoremap <Space>q :q!<CR>
   "replace all occurences of word under cursor
   nnoremap <Space>r :%s/\<<C-r><C-w>\>//g<Left><Left>
-  
+  "better search
+  nnoremap <Space>s / 
+
 "If system clipboard copy and paste don't work install vim-gtk
 
 "visual mode maps 
@@ -81,7 +84,10 @@ set autoindent
   "paste from clipboard
   noremap <C-p> "+p
   "paste from clipboard
-  noremap <Space>s /
+  noremap <space>j <C-w>j
+  "paste from clipboard
+  noremap <space>k <C-w>k
 
 "no autocomment
-  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o keywordprg=:help
+  autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+  autocmd BufRead ~/.vimrc setlocal keywordprg=:help
