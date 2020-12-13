@@ -19,14 +19,13 @@ set autoindent
 "You'll probably need
 ":help key-notation 
 
+
 "insert mode maps 
   "autocomplete
-  inoremap <Space><Tab> <C-x><C-n>
+  inoremap <Tab><Tab> <C-x><C-n>
   "j k navigation in autocomplete
   inoremap <expr> j pumvisible() ? "\<C-N>" : "j"
   inoremap <expr> k pumvisible() ? "\<C-P>" : "k"
-  "bette way to go to normal mode
-  inoremap <Space><Space> <Esc>
 
 "normal mode maps 
   "empty line after
@@ -52,7 +51,7 @@ set autoindent
   "replace all occurences of word under cursor
   nnoremap <Space>r :%s/\<<C-r><C-w>\>//g<Left><Left>
   "better search
-  nnoremap <Space>s / 
+  nnoremap <Space>s /
 
 "If system clipboard copy and paste don't work install vim-gtk
 
@@ -72,18 +71,16 @@ set autoindent
   cnoremap <Space>e <C-f>
 
 "general maps
-  "better way to normal mode
-  noremap <Space><Space> <Esc>
   "paste from clipboard
   noremap <C-p> "+p
   "vim window down
-  noremap <space>J <C-w>j
+  noremap <space>J <C-d>
   "vim window up
-  noremap <space>K <C-w>k
-  "half page down
-  noremap <space>j <C-d>
-  "half page up
-  noremap <space>k <C-u>
+  noremap <space>K <C-u>
+  "paragraph down
+  noremap <space>j }
+  "paragraph up
+  noremap <space>k {
 
 "no autocomment
   autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

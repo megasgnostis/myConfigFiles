@@ -17,6 +17,7 @@ shell chmod 700 testParallel.sh
 mkdir 4Scripts
 shell make clean
 ;'
+shell ./gh.sh
 shell p
 find 
 find sc
@@ -46,5 +47,4 @@ shell
 shell mc_
 shell mc
 delete
-shell ./gh.sh
 
