@@ -76,6 +76,8 @@ set autoindent
   vmap <Space>i I<Space><Esc>
   "replace all occurences of word under cursor
   vmap <Space>r "hy:%s/<C-r>h//g<Left><Left>
+  "search highlighted text
+  vnoremap <Space>s y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 "command line mode maps
   "better way to normal mode

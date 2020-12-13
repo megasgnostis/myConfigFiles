@@ -1,5 +1,3 @@
-rename 1.tex
-mkdir 1Exs
 mkdir 
 touch keepmegithub
 open_with `
@@ -41,10 +39,12 @@ mkdir code
 mkdir executables
 touch Main.elm
 open_with vim
-
-shell 
 open_with 
-delete
 shell m
+rename   run.out
+delete
+open_with jh
+shell 
 shell mc_
 shell mc
+
