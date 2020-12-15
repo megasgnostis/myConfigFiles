@@ -39,12 +39,12 @@ mkdir code
 mkdir executables
 touch Main.elm
 open_with vim
-open_with 
 shell m
 rename   run.out
 open_with jh
 shell 
 shell mc_
 shell mc
+open_with 
 delete
 

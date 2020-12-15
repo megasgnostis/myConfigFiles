@@ -57,14 +57,18 @@ set autoindent
 
 "visual mode maps 
   "copy outside vim
-  vnoremap <C-c> "+y
+  vnoremap <Space>y "+y
   "space before
   vnoremap <Space>i I<Space><Esc>
   "replace all occurences of highlighted text
   vnoremap <Space>r "hy:%s/<C-r>h//g<Left><Left>
   "search highlighted text
   vnoremap <Space>s y/\V<C-R>=escape(@",'/\')<CR><CR>
-
+  "search highlighted text
+  vnoremap <Space>d "+d
+  "search highlighted text
+  vnoremap P "0p
+  
 "command line mode maps
   "edit previous commands
   "executes last line with enter
@@ -72,15 +76,15 @@ set autoindent
 
 "general maps
   "paste from clipboard
-  noremap <C-p> "+p
+  noremap <Space>p "+p
   "vim window down
-  noremap <space>J <C-d>
+  noremap <space>j <C-d>
   "vim window up
-  noremap <space>K <C-u>
+  noremap <space>k <C-u>
   "paragraph down
-  noremap <space>j }
+  noremap <space>J }
   "paragraph up
-  noremap <space>k {
+  noremap <space>K {
 
 "no autocomment
   autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
