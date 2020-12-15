@@ -64,6 +64,9 @@ alias ..="cd .."
 alias cb="cabal build"
 alias cr="cabal repl"
 
+# cool stuff  
+alias s="w3m duckduckgo.com"
+
 # open particular file 
 vimCheatImageFile="$helpFilesDir/3Vim/2VimCheat.png"
 alias vcp="xdg-open &> /dev/null $vimCheatImageFile &"
