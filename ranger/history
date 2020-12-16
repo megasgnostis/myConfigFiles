@@ -1,10 +1,3 @@
-rename 3Ελεύθεραjj
-mkdir 4ΡοήΜ
-deletey
-mkdir 1Ασκήσεις
-mkdir 2Υλικό
-find 2l
-mkdir GameOfLife
 mkdir 1Standard
 mkdir 2Recursive
 mkdir 3Tiled
@@ -16,7 +9,6 @@ shell make clean
 ;'
 shell ./gh.sh
 shell p
-find 
 find sc
 mkdir 0Simple
 mkdir 2SimpleNew
@@ -35,16 +27,24 @@ search
 mkdir code
 mkdir executables
 touch Main.elm
-open_with vim
 shell m
 rename   run.out
 open_with jh
 shell mc_
-shell mc
-open_with 
 shell S
-delete
-shell 
+open_with 
+open_with vim
+open_with bim
+find m
+find n
+find N
+find c
+shell co
+find x
+find co
+find 
 find M
-=l
+shell 
 
+delete
+shell mc

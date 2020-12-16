@@ -72,6 +72,7 @@ bindsym XF86MonBrightnessDown exec $brightnessScriptPath -
 # Screenshots
 bindsym Print exec gnome-screenshot -i 
 bindsym $mod+Print exec gnome-screenshot -a
+bindsym $mod+Shift+v exec pavucontrol
 
 # Languages
 exec_always setxkbmap -layout us,gr
