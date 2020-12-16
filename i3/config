@@ -64,15 +64,10 @@ bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 
-# Brightness
-set $brightnessScriptPath /home/gnostis/Desktop/1StunningConfigFiles/i3/scripts/1ControlBrightness.sh 
-bindsym XF86MonBrightnessUp exec $brightnessScriptPath +
-bindsym XF86MonBrightnessDown exec $brightnessScriptPath -
-
 # Screenshots
 bindsym Print exec gnome-screenshot -i 
 bindsym $mod+Print exec gnome-screenshot -a
-bindsym $mod+Shift+v exec pavucontrol
+bindsym $mod+Shift+s exec pavucontrol
 
 # Languages
 exec_always setxkbmap -layout us,gr
