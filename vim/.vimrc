@@ -19,7 +19,6 @@ set autoindent
 "You'll probably need
 ":help key-notation 
 
-
 "insert mode maps 
   "autocomplete
   inoremap <Tab> <C-x><C-n>
@@ -42,6 +41,8 @@ set autoindent
   nnoremap <Space>a a<Space><Esc>
   "tab at cursor
   nnoremap <Space>> <C-v>>
+  "tab back at cursor
+  nnoremap <Space>< <C-v><
   "save and edit other file
   nnoremap <Space>e :w<CR>:e<Space>
   "remove highlighting
@@ -56,17 +57,19 @@ set autoindent
 "If system clipboard copy and paste don't work install vim-gtk
 
 "visual mode maps 
-  "copy outside vim
+  "copy to clipboard
   vnoremap <Space>y "+y
   "space before
   vnoremap <Space>i I<Space><Esc>
   "replace all occurences of highlighted text
   vnoremap <Space>r "hy:%s/<C-r>h//g<Left><Left>
   "search highlighted text
-  vnoremap <Space>s y/\V<C-R>=escape(@",'/\')<CR><CR>
-  "search highlighted text
+  vnoremap <Space>sh y/\V<C-R>=escape(@",'/\')<CR><CR>
+  "search other
+  vnoremap <Space>so /
+  "delete and copy to clipboard
   vnoremap <Space>d "+d
-  "search highlighted text
+  "paste without copying the highlighted text
   vnoremap P "0p
   
 "command line mode maps
@@ -77,17 +80,18 @@ set autoindent
 "general maps
   "paste from clipboard
   noremap <Space>p "+p
-  "vim window down
+  "better down half a page
   noremap <space>j <C-d>
-  "vim window up
+  "better up half a page
   noremap <space>k <C-u>
-  "paragraph down
+  "better paragraph down
   noremap <space>J }
-  "paragraph up
+  "better paragraph up
   noremap <space>K {
 
 "no autocomment
   autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+"enable pressing K for help about word under cursor in vimrc
   autocmd BufRead ~/.vimrc setlocal keywordprg=:help
 
 if empty(glob('~/.vim/autoload/plug.vim'))
