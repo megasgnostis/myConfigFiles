@@ -1,7 +1,3 @@
-mkdir 6thTry
-shell chmod 700 testParallel.sh
-mkdir 4Scripts
-shell make clean
 ;'
 shell ./gh.sh
 shell p
@@ -47,4 +43,8 @@ find
 shell mc
 shell mc_
 
+mkdir Given
+find Î
+deleteD
+find pl
 delete
