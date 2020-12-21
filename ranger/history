@@ -1,4 +1,3 @@
-mkdir 3SimpleNewPrivate
 find 1
 open_with '
 shell rm *.err *.out
@@ -47,4 +46,5 @@ find vi
 search vimium
 find ra
 shell parlabfs
+rename 2.pdf
 delete
