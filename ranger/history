@@ -1,12 +1,5 @@
-;'
-shell ./gh.sh
-shell p
-find sc
-mkdir 0Simple
-mkdir 2SimpleNew
 mkdir 3SimpleNewPrivate
 find 1
-shell parlabfs
 open_with '
 shell rm *.err *.out
 mkdir 4Γενικά
@@ -35,16 +28,23 @@ find M
 shell j
 shell elm reactor
 kk
-shell 
 shell m
 find m
 shell rm *
 find 
 shell mc
 shell mc_
-
 mkdir Given
 find �
 deleteD
 find pl
+
+find z
+shell 
+mkdir 
+mkdir zathura
+find vi
+search vimium
+find ra
+shell parlabfs
 delete

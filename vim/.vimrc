@@ -22,9 +22,11 @@ set autoindent
 "insert mode maps 
   "autocomplete
   inoremap <Tab> <C-x><C-n>
-  "j k navigation in autocomplete
-  inoremap <expr> j pumvisible() ? "\<C-N>" : "j"
-  inoremap <expr> k pumvisible() ? "\<C-P>" : "k"
+  "k l navigation in autocomplete
+  inoremap <expr> k pumvisible() ? "\<C-N>" : "k"
+  inoremap <expr> l pumvisible() ? "\<C-P>" : "l"
+  "better way to go to normal mode
+  inoremap <A-Space> <Esc>
 
 "normal mode maps 
   "empty line after
@@ -32,7 +34,7 @@ set autoindent
   "empty line before
   nnoremap <Space>O O<Esc>0
   "latex reload
-  nnoremap <Space>l :w<CR> :! pdflatex -output-directory ../2Pdf %<CR><CR>
+  nnoremap <Space>p :w<CR> :! pdflatex -output-directory ../2Pdf %<CR><CR>
   "better save
   nnoremap <Space>z :w<CR>
   "space at cursor
@@ -50,44 +52,60 @@ set autoindent
   "better quitting without saving
   nnoremap <Space>q :q!<CR>
   "replace all occurences of word under cursor
-  nnoremap <Space>r :%s/\<<C-r><C-w>\>//g<Left><Left>
-  "better search
-  nnoremap <Space>s /
+  nnoremap r :%s/\<<C-r><C-w>\>//g<Left><Left>
+  "replace all occurences of word under cursor
+  nnoremap <Space>s /<C-r><C-w><CR>
+  "better delete line
+  nnoremap D "+dd
+  "better delete single character
+  nnoremap d "+x
+  "better copy line
+  nnoremap C "+yy
 
 "If system clipboard copy and paste don't work install vim-gtk
 
 "visual mode maps 
-  "copy to clipboard
-  vnoremap <Space>y "+y
   "space before
-  vnoremap <Space>i I<Space><Esc>
+  vnoremap i I<Space><Esc>
   "replace all occurences of highlighted text
-  vnoremap <Space>r "hy:%s/<C-r>h//g<Left><Left>
+  vnoremap r "hy:%s/<C-r>h//g<Left><Left>
   "search highlighted text
-  vnoremap <Space>sh y/\V<C-R>=escape(@",'/\')<CR><CR>
-  "search other
-  vnoremap <Space>so /
-  "delete and copy to clipboard
-  vnoremap <Space>d "+d
+  vnoremap <Space>s y/\V<C-R>=escape(@",'/\')<CR><CR>
   "paste without copying the highlighted text
   vnoremap P "0p
-  
+  "better delete
+  vnoremap d "+d
+
 "command line mode maps
   "edit previous commands
   "executes last line with enter
   cnoremap <Space>e <C-f>
 
 "general maps
-  "paste from clipboard
-  noremap <Space>p "+p
+  "better copy
+  noremap c "+y
+  "better paste
+  noremap p "+p
   "better down half a page
-  noremap <space>j <C-d>
+  noremap <space>k <C-d>
   "better up half a page
-  noremap <space>k <C-u>
+  noremap <space>l <C-u>
   "better paragraph down
-  noremap <space>J }
+  noremap K }
   "better paragraph up
-  noremap <space>K {
+  noremap L {
+  "better search
+  noremap s /
+  "better left
+  noremap j h
+  "better down
+  noremap k j
+  "better up
+  noremap l k
+  "better right
+  noremap ; l
+  "better substitute
+  noremap x s
 
 "no autocomment
   autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

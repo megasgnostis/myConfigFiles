@@ -25,10 +25,10 @@ bindsym $mod+e layout toggle split
 # Sizing stuff
 bindsym $mod+r mode "resize"
 mode "resize" {
-        bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym l resize grow width 5 px or 5 ppt
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
         bindsym space mode "default"
 }
 
@@ -47,14 +47,14 @@ bindsym $mod+c split h
 bindsym $mod+v split v
 
 # moving stuff
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -78,6 +78,3 @@ exec_always feh --bg-scale /home/gnostis/Desktop/1StunningConfigFiles/nature.jpg
 
 # Network monitor
 exec_always nm-applet
-  
-# Remap caps lock to esc
-exec_always xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
