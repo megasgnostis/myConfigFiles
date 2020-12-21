@@ -1,4 +1,4 @@
 #!/bin/bash
 
-SHELL=$(dirname $0)/2RangerWithAliases.sh
+SHELL=$(dirname $0)/RangerWithAliases.sh
 ranger --choosedir=$HOME/.rangerdir
