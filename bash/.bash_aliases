@@ -1,7 +1,7 @@
 # dirs
-helpFilesDir="~/Desktop/2StunningHelpFiles"
-helpScriptsDir="$helpFilesDir/1Scripts"
-rangerScriptsDir="/home/gnostis/Desktop/1StunningConfigFiles/ranger/scripts"
+helpFilesDir="~/Desktop/StunningHelpFiles"
+helpScriptsDir="$helpFilesDir/Scripts"
+rangerScriptsDir="/home/gnostis/Desktop/StunningConfigFiles/ranger/scripts"
 
 # edit particular config file
 bashFile="~/.bashrc"
@@ -14,12 +14,6 @@ alias vba="vim $bashAliasesFile"
 alias vv="vim $vimFile"
 alias vi3="vim $i3File"
 alias vx="vim $XresourcesFile"
-
-# startup
-alias setLangs="setxkbmap -layout us,gr"
-alias changeLang="setxkbmap -option 'grp:ctrl_alt_toggle'"
-alias background="feh --bg-scale ~/Dropbox/3Other/nature.jpg"
-alias initialize="setLangs;changeLang;background"
 
 # peripherals
 alias rwf="sudo service network-manager restart"
