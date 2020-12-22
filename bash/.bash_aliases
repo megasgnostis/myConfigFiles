@@ -1,7 +1,5 @@
 # paths
 desktop="~/Desktop"
-helpFiles="$desktop/StunningHelpFiles"
-rangerScripts="$desktop/StunningConfigFiles/ranger/scripts"
 bashFile="~/.bashrc"
 XresourcesFile="~/.Xresources"
 
@@ -17,12 +15,14 @@ alias rwf="sudo service network-manager restart"
 alias mirror='xrandr --output eDP-1 --same-as HDMI-1'
 
 # run ranger with aliases
+rangerScripts="$desktop/StunningConfigFiles/ranger/scripts"
 alias aliasesInRangerScript="$rangerScripts/Ranger.sh"
 alias cdToLastRangerDir="cd \"\`cat ~/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo ranger"
 
 # help scripts
+helpFiles="$desktop/StunningHelpFiles"
 alias temp="$helpFiles/Templates/CopyTemplate.sh"
 alias dirReplace="$helpFiles/ReplaceInDir.sh"
 
@@ -51,8 +51,9 @@ alias sb="source $bashFile"
 alias sx="xrdb $XresourcesFile"
 
 # executables
-alias exercises="$desktop/StunningExecutables/1Exercises/4Executable"
-alias grades="$desktop/StunningExecutables/2Grades/1ShowGrades < /home/gnostis/Desktop/StunningExecutables/2Grades/grades.csv"
+executables="$desktop/StunningExecutables"
+alias exercises="$executables/1Exercises/4Executable"
+alias grades="$executables/2Grades/1ShowGrades < $executables/2Grades/grades.csv"
 
 # uni
 alias parlab="ssh parlab02@orion.cslab.ece.ntua.gr"

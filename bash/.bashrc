@@ -44,8 +44,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-set -o vi
 PS1="\W: "
-bind '"  ":vi-movement-mode'
-VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
-
+bind '"\el":previous-history'
+bind '"\ek":next-history'
