@@ -26,7 +26,7 @@ set autoindent
   inoremap <expr> k pumvisible() ? "\<C-N>" : "k"
   inoremap <expr> l pumvisible() ? "\<C-P>" : "l"
   "better way to go to normal mode
-  inoremap <A-Space> <Esc>
+  inoremap <A-Tab> <Esc>
 
 "normal mode maps 
   "empty line after
@@ -60,13 +60,15 @@ set autoindent
   "better delete single character
   nnoremap d "+x
   "better copy line
-  nnoremap C "+yy
+  nnoremap c "+yy
+  "better help
+  nnoremap h K
 
 "If system clipboard copy and paste don't work install vim-gtk
 
 "visual mode maps 
   "space before
-  vnoremap i I<Space><Esc>
+  vnoremap <Space>i I<Space><Esc>
   "replace all occurences of highlighted text
   vnoremap r "hy:%s/<C-r>h//g<Left><Left>
   "search highlighted text
@@ -75,6 +77,8 @@ set autoindent
   vnoremap P "0p
   "better delete
   vnoremap d "+d
+  "better copy
+  vnoremap c "+y
 
 "command line mode maps
   "edit previous commands
@@ -82,8 +86,6 @@ set autoindent
   cnoremap <Space>e <C-f>
 
 "general maps
-  "better copy
-  noremap c "+y
   "better paste
   noremap p "+p
   "better down half a page
@@ -109,8 +111,12 @@ set autoindent
 
 "no autocomment
   autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+  "set formatoptions-=cro
 "enable pressing K for help about word under cursor in vimrc
   autocmd BufRead ~/.vimrc setlocal keywordprg=:help
+"disable syntax for alex/happy files
+  autocmd BufRead ~/*.x syntax off
+  autocmd BufRead ~/*.y syntax off
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs

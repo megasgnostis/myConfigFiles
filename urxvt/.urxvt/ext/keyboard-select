@@ -146,13 +146,13 @@ sub key_press {
 		} else {
 			toggle_select($self, 'n');
 		}
-	} elsif ($key eq 'k' || $keysym == 0xff52) {
+	} elsif ($key eq 'j' || $keysym == 0xff52) {
 		move_cursor($self, 'k');
-	} elsif ($key eq 'j' || $keysym == 0xff54) {
+	} elsif ($key eq 'k' || $keysym == 0xff54) {
 		move_cursor($self, 'j');
-	} elsif ($key eq 'h' || $keysym == 0xff51) {
+	} elsif ($key eq 'l' || $keysym == 0xff51) {
 		move_cursor($self, 'h');
-	} elsif ($key eq 'l' || $keysym == 0xff53) {
+	} elsif ($key eq ';' || $keysym == 0xff53) {
 		move_cursor($self, 'l');
 	} elsif ($keysym == 0xff57) {
 		move_cursor($self, '$');
@@ -185,11 +185,11 @@ sub move_cursor {
 	my ($cr, $cc) = $self->screen_cur();
 	my $line = $self->line($cr);
 
-	if ($key eq 'k' && $line->beg > $self->top_row) {
+	if ($key eq 'h' && $line->beg > $self->top_row) {
 		$cr = $line->beg - 1;
 	} elsif ($key eq 'j' && $line->end < $self->nrow - 1) {
 		$cr = $line->end + 1;
-	} elsif ($key eq 'h' && $self->{offset} > 0) {
+	} elsif ($key eq 'k' && $self->{offset} > 0) {
 		$self->{offset} = $line->offset_of($cr, $cc) - 1;
 		$self->{dollar} = 0;
 	} elsif ($key eq 'l' && $self->{offset} < $line->l - 1) {

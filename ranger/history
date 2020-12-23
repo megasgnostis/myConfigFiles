@@ -1,11 +1,3 @@
-mkdir 1
-mkdir 2
-find 3
-search
-mkdir code
-mkdir executables
-touch Main.elm
-rename   run.out
 open_with jh
 shell S
 open_with vim
@@ -24,13 +16,11 @@ shell m
 find m
 shell rm *
 find 
-shell mc
 shell mc_
 mkdir Given
 find Î
 deleteD
 find pl
-
 find z
 shell 
 mkdir 
@@ -42,9 +32,19 @@ shell parlabfs
 rename 2.pdf
 shell qq
 open_wit
-cd 
 find desk
 find Desktop 
-delete
-open_with 
 find inp
+open_with 
+cd 
+shell mc
+open_with m
+find ma
+find mai
+find mak
+mkdir code
+
+mkdir Helpers
+delete
+find bl
+find blu
