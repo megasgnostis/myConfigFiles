@@ -52,8 +52,8 @@ alias sx="xrdb $XresourcesFile"
 
 # executables
 executables="$desktop/StunningExecutables"
-alias exercises="$executables/1Exercises/4Executable"
-alias grades="$executables/2Grades/1ShowGrades < $executables/2Grades/grades.csv"
+alias exercises="$executables/Exercises/Executable"
+alias grades="$executables/Grades/ShowGrades < $executables/Grades/grades.csv"
 
 # uni
 alias parlab="ssh parlab02@orion.cslab.ece.ntua.gr"

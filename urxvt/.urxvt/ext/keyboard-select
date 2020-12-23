@@ -108,7 +108,8 @@ sub key_press {
 		}
 	} elsif ($keysym == 0xff1b || lc($key) eq ' ') {
 		deactivate($self);
-	} elsif (lc($key) eq 'y' || $keysym == 0xff0d ||
+	} elsif (lc($key) eq 'c' || $keysym == 0xff0d ||
+    #} elsif (lc($key) eq 'y' || $keysym == 0xff0d ||
 			(lc($key) eq 'm' && $event->{state} & urxvt::ControlMask)) {
 		my $quit = 0;
 		if ($key eq 'Y' && $self->{select} ne 'l') {
@@ -125,7 +126,8 @@ sub key_press {
 				$self->selection($self->selection(), 1);
 				$self->selection_grab($event->{time}, 1);
 			}
-			if (lc($key) eq 'y') {
+      #if (lc($key) eq 'y') {
+      if (lc($key) eq 'c') {
 				$self->selection_beg(1, 0);
 				$self->selection_end(1, 0);
 				$self->{select} = '';
@@ -158,8 +160,12 @@ sub key_press {
 		move_cursor($self, '$');
 	} elsif ($keysym == 0xff50) {
 		move_cursor($self, '^');
+	} elsif ($key eq 'u') {
+		move_cursor($self, 'u');
+	} elsif ($key eq 'd') {
+		move_cursor($self, 'd');
 	} elsif ('gG0^$HML' =~ m/\Q$key\E/ ||
-			('fbdu' =~ m/\Q$key\E/ && $event->{state} & urxvt::ControlMask)) {
+      ('fbdu' =~ m/\Q$key\E/ && $event->{state} & urxvt::ControlMask)) {
 		move_cursor($self, $key);
 	} elsif (lc($key) eq 'f') {
 		$self->{move_to} = 1;
