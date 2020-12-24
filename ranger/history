@@ -32,7 +32,6 @@ open_wit
 find desk
 find Desktop 
 find inp
-open_with 
 cd 
 shell mc
 open_with m
@@ -48,3 +47,4 @@ shell
 delete
 open_with q
 open_with vim
+open_with 
