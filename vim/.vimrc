@@ -21,7 +21,7 @@ set autoindent
 
 "insert mode maps 
   "autocomplete
-  inoremap <Tab> <C-x><C-n>
+  inoremap <Tab><Tab> <C-x><C-n>
   "k l navigation in autocomplete
   inoremap <expr> k pumvisible() ? "\<C-N>" : "k"
   inoremap <expr> l pumvisible() ? "\<C-P>" : "l"
