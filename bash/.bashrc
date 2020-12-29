@@ -47,3 +47,5 @@ fi
 PS1="\W: "
 bind '"\el":previous-history'
 bind '"\ek":next-history'
+
+PATH=/home/gnostis/.cabal/bin:$PATH
