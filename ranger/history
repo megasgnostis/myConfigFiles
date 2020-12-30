@@ -43,8 +43,8 @@ find bl
 find blu
 shell
 mkdir TypeClasses
-delete
 
 open_with vim
 open_with q
 open_with 
+delete

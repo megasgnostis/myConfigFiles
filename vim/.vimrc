@@ -29,6 +29,8 @@ set autoindent
   inoremap <A-Tab> <Esc>
 
 "normal mode maps 
+  "copy word under cursor
+  nnoremap <Space>c "+yiw
   "empty line after
   nnoremap <Space>o o<Esc>0
   "empty line before
