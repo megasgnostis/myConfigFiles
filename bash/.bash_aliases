@@ -45,6 +45,7 @@ alias mc_="make clean_"
 alias sai="sudo apt install"
 alias bye="shutdown 0"
 alias ..="cd .."
+alias gr="grep -r"
 
 # source 
 alias sb="source $bashFile"

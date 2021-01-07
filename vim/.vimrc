@@ -36,7 +36,7 @@ set autoindent
   "empty line before
   nnoremap <Space>O O<Esc>0
   "latex reload
-  nnoremap <Space>p :w<CR> :! pdflatex -output-directory ../2Pdf %<CR><CR>
+  nnoremap <Space>p :w<CR> :! pdflatex -output-directory ../Pdf %<CR><CR>
   "better save
   nnoremap <Space>z :w<CR>
   "space at cursor
