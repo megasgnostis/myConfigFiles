@@ -1,4 +1,3 @@
-find c
 shell co
 find x
 find co
@@ -47,4 +46,5 @@ open_with
 search 
 search  
 
+mkdir Εξαμηνιαία
 delete
