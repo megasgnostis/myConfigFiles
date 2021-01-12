@@ -1,5 +1,3 @@
-shell co
-find x
 find co
 find M
 shell j
@@ -48,3 +46,5 @@ search
 
 mkdir Εξαμηνιαία
 delete
+shell temp εξαμηνιαία.ltx
+open_with  q
