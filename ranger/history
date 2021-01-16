@@ -45,6 +45,6 @@ search
 search  
 
 mkdir Εξαμηνιαία
-delete
 shell temp εξαμηνιαία.ltx
 open_with  q
+delete
