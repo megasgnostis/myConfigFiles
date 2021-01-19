@@ -1,4 +1,3 @@
-find co
 find M
 shell j
 shell elm reactor
@@ -47,4 +46,5 @@ search
 mkdir Εξαμηνιαία
 shell temp εξαμηνιαία.ltx
 open_with  q
+deleteq
 delete
