@@ -1,4 +1,3 @@
-mkdir Given
 find �
 deleteD
 find pl
@@ -48,3 +47,4 @@ mkdir Όλες
 open_with 
 cd 
 delete
+mkdir vimium
