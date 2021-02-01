@@ -59,3 +59,6 @@ alias grades="$executables/Grades/ShowGrades < $executables/Grades/grades.csv"
 # uni
 alias parlab="ssh parlab02@orion.cslab.ece.ntua.gr"
 alias parlabfs="sshfs -o IdentityFile=~/.ssh/id_rsa parlab02@orion.cslab.ece.ntua.gr:/home/parallel/parlab02/scirouter /home/gnostis/scirouter"
+
+# periodic table
+alias ptab="feh ~/Pictures/PeriodicTable.png"

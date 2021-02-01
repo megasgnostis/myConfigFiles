@@ -1,13 +1,3 @@
-find M
-shell j
-shell elm reactor
-kk
-shell m
-find m
-shell rm *
-find 
-shell mc_
-mkdir Given
 find �
 deleteD
 find pl
@@ -25,7 +15,6 @@ open_wit
 find desk
 find Desktop 
 find inp
-cd 
 shell mc
 open_with m
 find ma
@@ -37,9 +26,7 @@ find bl
 find blu
 shell
 mkdir TypeClasses
-open_with vim
 open_with q
-open_with 
 search 
 search  
 
@@ -47,4 +34,17 @@ mkdir Εξαμηνιαία
 shell temp εξαμηνιαία.ltx
 open_with  q
 deleteq
+mkdir Εξέταση
+mkdir Ασκήσεις
+mkdir Διαφάνειες
+open_with vim
+find con
+cd /mnt/
+shel
+rename Desktop
+find 1
+mkdir Όλες
+open_with 
+cd 
 delete
+find  

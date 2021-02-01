@@ -59,10 +59,14 @@ bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
 
 # Screenshots
 bindsym Print exec gnome-screenshot -i 
@@ -78,3 +82,6 @@ exec_always feh --bg-scale /home/gnostis/Desktop/StunningConfigFiles/nature.jpg
 
 # Network monitor
 exec_always nm-applet
+
+# Mirror screen on hdmi monitor
+exec_always xrandr --output eDP-1 --same-as HDMI-1
