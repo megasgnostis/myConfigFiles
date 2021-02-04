@@ -7,11 +7,11 @@ label=♪
 instance=Master
 interval=1
 
-[batterybar]
-command=~/Desktop/StunningConfigFiles/i3blocks/batteryBar
-interval=5
-markup=pango
-min_width=■■■■■
+# [batterybar]
+# command=~/Desktop/StunningConfigFiles/i3blocks/batteryBar
+# interval=5
+# markup=pango
+# min_width=■■■■■
 
 [time]
 command=date '+%d-%m-%Y %H:%M'
