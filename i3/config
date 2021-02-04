@@ -4,38 +4,24 @@ set $mod Mod4
 # Font
 font pango:Ubuntu Sans Mono 23
 
-# Bar
+# Status Bar
 bar {
         position top
         status_command i3blocks
 }
 
-# Sizing stuff
-bindsym $mod+r mode "resize"
-mode "resize" {
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
-        bindsym space mode "default"
-}
-
-# opening and closing stuff
+# Opening and closing stuff
 bindsym $mod+a exec urxvt
 bindsym $mod+s exec brave-browser
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
-
-# fullsreecn and restart
-bindsym $mod+z fullscreen toggle
-bindsym $mod+x restart
 
 # Splitting
 bindsym $mod+c split h
 bindsym $mod+v split v
 bindsym $mod+e layout toggle split
 
-# moving stuff
+# Moving stuff
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
@@ -57,10 +43,35 @@ bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 
+# Sizing stuff
+bindsym $mod+r mode "resize"
+mode "resize" {
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym space mode "default"
+}
+
+# Floating stuff
+floating_modifier $mod
+bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space floating toggle
+
+# Fullscreen
+bindsym $mod+z fullscreen toggle
+
+# Restart i3
+bindsym $mod+x restart
+
 # Screenshots
 bindsym Print exec gnome-screenshot -i 
 bindsym $mod+Print exec gnome-screenshot -a
 bindsym $mod+Shift+s exec pavucontrol
+
+# Reloading and exiting
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+e exit
 
 # Boot
 
@@ -73,12 +84,3 @@ exec_always feh --bg-scale $HOME/Desktop/StunningConfigFiles/background.jpg
 
 # Screen mirroring
 exec_always xrandr --output eDP-1 --same-as HDMI-1
-
-# floating stuff
-floating_modifier $mod
-bindsym $mod+space focus mode_toggle
-bindsym $mod+Shift+space floating toggle
-
-# reloading and exiting
-bindsym $mod+Shift+r reload
-bindsym $mod+Shift+e exit
