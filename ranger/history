@@ -41,10 +41,10 @@ shel
 rename Desktop
 find 1
 mkdir Όλες
-open_with 
 cd 
 mkdir vimium
 mkdir scriptsForSetup
 mkdir QuantumPhysics2
 mkdir scripts
+open_with 
 delete
