@@ -84,3 +84,6 @@ exec_always feh --bg-scale $HOME/Desktop/StunningConfigFiles/background.jpg
 
 # Screen mirroring
 exec_always xrandr --output eDP-1 --same-as HDMI-1
+
+# Networks
+exec_always nm-applet
