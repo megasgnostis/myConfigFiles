@@ -78,7 +78,7 @@ exec_always setxkbmap -layout us,gr
 exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
 
 # Background
-exec_always feh --bg-scale /home/gnostis/Desktop/StunningConfigFiles/background.jpg
+exec_always feh --bg-scale $HOME/Desktop/StunningConfigFiles/background.jpg
 
 # Network monitor
 exec_always nm-applet
