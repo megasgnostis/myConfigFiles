@@ -1,14 +1,15 @@
-# paths
 desktop="~/Desktop"
+
+# configs
 bashFile="~/.bashrc"
 XresourcesFile="~/.Xresources"
-
-# vim particular config file
 alias vb="vim $bashFile"
 alias vba="vim ~/.bash_aliases"
 alias vv="vim ~/.vimrc"
 alias vi3="vim ~/.config/i3/config"
 alias vx="vim $XresourcesFile"
+alias sb="source $bashFile"
+alias sx="xrdb $XresourcesFile"
 
 # peripherals
 alias rwf="sudo service network-manager restart"
@@ -23,8 +24,8 @@ alias sr="sudo ranger"
 
 # help scripts
 helpFiles="$desktop/StunningHelpFiles"
-alias temp="$helpFiles/Templates/CopyTemplate.sh"
-alias dirReplace="$helpFiles/ReplaceInDir.sh"
+alias temp="$helpFiles/Scripts/CopyTemplate.sh"
+alias dirReplace="$helpFiles/Scripts/ReplaceInDir.sh"
 
 # git
 alias ga="git add ."
@@ -46,10 +47,6 @@ alias sai="sudo apt install"
 alias bye="shutdown 0"
 alias ..="cd .."
 alias gr="grep -r"
-
-# source 
-alias sb="source $bashFile"
-alias sx="xrdb $XresourcesFile"
 
 # executables
 executables="$desktop/StunningExecutables"

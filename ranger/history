@@ -1,5 +1,3 @@
-deleteD
-find pl
 find z
 shell 
 mkdir 
@@ -45,6 +43,8 @@ find 1
 mkdir Όλες
 open_with 
 cd 
-delete
 mkdir vimium
 mkdir scriptsForSetup
+mkdir QuantumPhysics2
+mkdir scripts
+delete
