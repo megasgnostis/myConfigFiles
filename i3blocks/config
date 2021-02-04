@@ -2,10 +2,10 @@ command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-[volume]
-label=♪
-instance=Master
-interval=1
+# [volume]
+# label=♪
+# instance=Master
+# interval=1
 
 [batterybar]
 command=~/Desktop/StunningConfigFiles/i3blocks/batteryBar
