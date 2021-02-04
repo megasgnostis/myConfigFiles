@@ -34,7 +34,7 @@ mode "resize" {
 
 # opening and closing stuff
 bindsym $mod+a exec urxvt
-bindsym $mod+s exec "brave-browser"
+bindsym $mod+s exec chromium-browser
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 
@@ -79,9 +79,3 @@ exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
 
 # Background
 exec_always feh --bg-scale $HOME/Desktop/StunningConfigFiles/background.jpg
-
-# Network monitor
-exec_always nm-applet
-
-# Mirror screen on hdmi monitor
-exec_always xrandr --output eDP-1 --same-as HDMI-1
