@@ -63,11 +63,6 @@ mode "resize" {
 
 bindsym $mod+z fullscreen toggle
 
-# Floating stuff
-floating_modifier $mod
-bindsym $mod+space focus mode_toggle
-bindsym $mod+Shift+space floating toggle
-
 # Screenshots
 bindsym Print exec gnome-screenshot -i 
 bindsym $mod+Print exec gnome-screenshot -a
@@ -77,6 +72,11 @@ bindsym $mod+Shift+s exec pavucontrol
 bindsym $mod+x restart
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
+
+# Floating stuff
+floating_modifier $mod
+bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space floating toggle
 
 # Boot
 
