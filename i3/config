@@ -16,32 +16,39 @@ bindsym $mod+s exec brave-browser
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 
+# Focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+
 # Splitting
 bindsym $mod+c split h
 bindsym $mod+v split v
 bindsym $mod+e layout toggle split
 
 # Moving stuff
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+m mode "move"
+mode "move" {
+  bindsym j move left
+  bindsym k move down
+  bindsym l move up
+  bindsym semicolon move right
+
+  bindsym 1 move container to workspace 1
+  bindsym 2 move container to workspace 2
+  bindsym 3 move container to workspace 3
+  bindsym 4 move container to workspace 4
+  bindsym 5 move container to workspace 5
+
+  bindsym space mode "default"
+}
 
 # Sizing stuff
 bindsym $mod+r mode "resize"
@@ -50,26 +57,24 @@ mode "resize" {
         bindsym k resize grow height 5 px or 5 ppt
         bindsym l resize shrink height 5 px or 5 ppt
         bindsym semicolon resize grow width 5 px or 5 ppt
+
         bindsym space mode "default"
 }
+
+bindsym $mod+z fullscreen toggle
 
 # Floating stuff
 floating_modifier $mod
 bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle
 
-# Fullscreen
-bindsym $mod+z fullscreen toggle
-
-# Restart i3
-bindsym $mod+x restart
-
 # Screenshots
 bindsym Print exec gnome-screenshot -i 
 bindsym $mod+Print exec gnome-screenshot -a
 bindsym $mod+Shift+s exec pavucontrol
 
-# Reloading and exiting
+# i3 stuff
+bindsym $mod+x restart
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
 
@@ -80,7 +85,7 @@ exec_always setxkbmap -layout us,gr
 exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
 
 # Background
-exec_always feh --bg-scale $HOME/Desktop/StunningConfigFiles/background.jpg
+exec_always feh --bg-scale $HOME/StunningConfigFiles/background.jpg
 
 # Screen mirroring
 exec_always xrandr --output eDP-1 --same-as HDMI-1

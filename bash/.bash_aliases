@@ -1,5 +1,3 @@
-desktop="~/Desktop"
-
 # configs
 bashFile="~/.bashrc"
 XresourcesFile="~/.Xresources"
@@ -16,14 +14,14 @@ alias rwf="sudo service network-manager restart"
 alias mirror='xrandr --output eDP-1 --same-as HDMI-1'
 
 # run ranger with aliases
-rangerScripts="$desktop/StunningConfigFiles/ranger/scripts"
+rangerScripts="$HOME/StunningConfigFiles/ranger/scripts"
 alias aliasesInRangerScript="$rangerScripts/Ranger.sh"
 alias cdToLastRangerDir="cd \"\`cat ~/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo ranger"
 
 # help scripts
-helpFiles="$desktop/StunningHelpFiles"
+helpFiles="$HOME/StunningHelpFiles"
 alias temp="$helpFiles/Scripts/CopyTemplate.sh"
 alias dirReplace="$helpFiles/Scripts/ReplaceInDir.sh"
 
@@ -49,7 +47,7 @@ alias ..="cd .."
 alias gr="grep -r"
 
 # executables
-executables="$desktop/StunningExecutables"
+executables="$HOME/StunningExecutables"
 alias exercises="$executables/Exercises/Executable"
 alias grades="$executables/Grades/ShowGrades < $executables/Grades/grades.csv"
 
