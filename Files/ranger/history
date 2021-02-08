@@ -3,6 +3,6 @@ search
 mkdir 3
 mkdir 4
 mkdir Papers
-delete
 shell 
 open_with 
+delete

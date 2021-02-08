@@ -14,8 +14,8 @@ alias rwf="sudo service network-manager restart"
 alias mirror='xrandr --output eDP-1 --same-as HDMI-1'
 
 # run ranger with aliases
-rangerScripts="$HOME/StunningConfigFiles/ranger/scripts"
-alias aliasesInRangerScript="$rangerScripts/Ranger.sh"
+scripts="$HOME/StunningConfigFiles/Scripts"
+alias aliasesInRangerScript="$scripts/Ranger.sh"
 alias cdToLastRangerDir="cd \"\`cat ~/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo ranger"

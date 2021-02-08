@@ -119,15 +119,3 @@ set autoindent
 "disable syntax for alex/happy files
   autocmd BufRead ~/*.x syntax off
   autocmd BufRead ~/*.y syntax off
-
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'elmcast/elm-vim'
-
-call plug#end()

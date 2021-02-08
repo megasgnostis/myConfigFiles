@@ -4,9 +4,11 @@ backups="$HOME/.configBackups"
 
 mkdir $backups
 
-cd ..
+cd ../Files
 
 stunningConfigs="$(pwd)"
+
+echo $stunningConfigs
 
 getDir () {
   case $1 in
