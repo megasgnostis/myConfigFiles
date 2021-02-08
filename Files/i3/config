@@ -12,7 +12,7 @@ bar {
 
 # Opening and closing stuff
 bindsym $mod+a exec urxvt
-bindsym $mod+s exec brave-browser
+bindsym $mod+s exec firefox
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 
@@ -86,9 +86,6 @@ exec_always setxkbmap -option 'grp:ctrl_alt_toggle'
 
 # Background
 exec_always feh --bg-scale $HOME/StunningConfigFiles/background.jpg
-
-# Screen mirroring
-exec_always xrandr --output eDP-1 --same-as HDMI-1
 
 # Networks
 exec_always nm-applet
