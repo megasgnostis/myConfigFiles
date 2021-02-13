@@ -160,10 +160,10 @@ sub key_press {
 		move_cursor($self, '$');
 	} elsif ($keysym == 0xff50) {
 		move_cursor($self, '^');
-	} elsif ($key eq 'u') {
-		move_cursor($self, 'u');
-	} elsif ($key eq 'd') {
-		move_cursor($self, 'd');
+	} elsif ($key eq 'L') {
+		move_cursor($self, 'L');
+	} elsif ($key eq 'K') {
+		move_cursor($self, 'K');
 	} elsif ('gG0^$HML' =~ m/\Q$key\E/ ||
       ('fbdu' =~ m/\Q$key\E/ && $event->{state} & urxvt::ControlMask)) {
 		move_cursor($self, $key);
@@ -200,14 +200,14 @@ sub move_cursor {
 		$self->{dollar} = 0;
 	} elsif ($key eq 'l' && $self->{offset} < $line->l - 1) {
 		++$self->{offset};
-	} elsif ($key eq 'f' || $key eq 'd') {
+	} elsif ($key eq 'f' || $key eq 'K') {
 		my $vs = $self->view_start() +
-				($key eq 'd' ? $self->nrow / 2 : $self->nrow - 1);
+				($key eq 'K' ? $self->nrow / 2 : $self->nrow - 1);
 		$vs = 0 if $vs > 0;
 		$cr += $vs - $self->view_start($vs);
-	} elsif ($key eq 'b' || $key eq 'u') {
+	} elsif ($key eq 'b' || $key eq 'L') {
 		my $vs = $self->view_start() -
-				($key eq 'u' ? $self->nrow / 2 : $self->nrow - 1);
+				($key eq 'L' ? $self->nrow / 2 : $self->nrow - 1);
 		$vs = $self->top_row if $vs < $self->top_row;
 		$cr += $vs - $self->view_start($vs);
 	} elsif ($key eq 'g') {

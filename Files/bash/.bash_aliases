@@ -1,10 +1,10 @@
 # configs
-bashFile="~/.bashrc"
-XresourcesFile="~/.Xresources"
+bashFile="$HOME/.bashrc"
+XresourcesFile="$HOME/.Xresources"
 alias vb="vim $bashFile"
-alias vba="vim ~/.bash_aliases"
-alias vv="vim ~/.vimrc"
-alias vi3="vim ~/.config/i3/config"
+alias vba="vim $HOME/.bash_aliases"
+alias vv="vim $HOME/.vimrc"
+alias vi3="vim $HOME/.config/i3/config"
 alias vx="vim $XresourcesFile"
 alias sb="source $bashFile"
 alias sx="xrdb $XresourcesFile"
@@ -14,14 +14,14 @@ alias rwf="sudo service network-manager restart"
 alias mirror='xrandr --output eDP-1 --same-as HDMI-1'
 
 # run ranger with aliases
-scripts="$HOME/StunningConfigFiles/Scripts"
+scripts="$Stunning/StunningConfigFiles/Scripts"
 alias aliasesInRangerScript="$scripts/Ranger.sh"
-alias cdToLastRangerDir="cd \"\`cat ~/.rangerdir\`\""
+alias cdToLastRangerDir="cd \"\`cat $HOME/.rangerdir\`\""
 alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo ranger"
 
 # help scripts
-helpFiles="$HOME/StunningHelpFiles"
+helpFiles="$Stunning/StunningHelpFiles"
 alias temp="$helpFiles/Scripts/CopyTemplate.sh"
 alias dirReplace="$helpFiles/Scripts/ReplaceInDir.sh"
 
@@ -47,13 +47,13 @@ alias ..="cd .."
 alias gr="grep -r"
 
 # executables
-executables="$HOME/StunningExecutables"
+executables="$Stunning/StunningExecutables"
 alias exercises="$executables/Exercises/Executable"
 alias grades="$executables/Grades/ShowGrades < $executables/Grades/grades.csv"
 
 # uni
 alias parlab="ssh parlab02@orion.cslab.ece.ntua.gr"
-alias parlabfs="sshfs -o IdentityFile=~/.ssh/id_rsa parlab02@orion.cslab.ece.ntua.gr:/home/parallel/parlab02/scirouter /home/gnostis/scirouter"
+alias parlabfs="sshfs -o IdentityFile=$HOME/.ssh/id_rsa parlab02@orion.cslab.ece.ntua.gr:/home/parallel/parlab02/scirouter /home/gnostis/scirouter"
 
 # periodic table
-alias ptab="feh ~/Pictures/PeriodicTable.png"
+alias ptab="feh $HOME/Pictures/PeriodicTable.png"
