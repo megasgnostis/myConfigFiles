@@ -49,4 +49,3 @@ bind '"\el":previous-history'
 bind '"\ek":next-history'
 
 PATH=/home/gnostis/.cabal/bin:$PATH
-export Stunning="$HOME/Stunning"
