@@ -8,16 +8,14 @@ cd ../Files
 
 stunningConfigs="$(pwd)"
 
-echo $stunningConfigs
-
-getDir () {
+getIntermediateDirOfFile () {
   case $1 in
     .vimrc) echo "vim";;
     .bashrc) echo "bash";;
     .bash_aliases) echo "bash";;
     .Xresources) echo "urxvt";;
     .urxvt) echo "urxvt";;
-    *) echo "wasn't supposed to happen. got this $1"; exit
+    *) echo "wasn't supposed to happen. got this -> $1"; exit
   esac
 }
 
@@ -26,7 +24,7 @@ for file in .vimrc .bashrc .bash_aliases .Xresources .urxvt
 do
   mv -f $HOME/$file $backups
 
-  ln -s $stunningConfigs/$(getDir $file)/$file $HOME
+  ln -s $stunningConfigs/$(getIntermediateDirOfFile $file)/$file $HOME
 done
 
 source "$HOME/.bashrc"

@@ -3,7 +3,7 @@ separator_block_width=15
 markup=none
 
 [batterybar]
-command=$HOME/StunningConfigFiles/Files/i3blocks/batteryBar
+command=$Stunning/StunningConfigFiles/Files/i3blocks/batteryBar
 interval=5
 markup=pango
 min_width=■■■■■
