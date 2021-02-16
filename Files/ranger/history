@@ -10,5 +10,7 @@ cd /deb
 cd /dev
 mkdir Papers
 find st
-delete
 mkdir Stunning
+mkdir Youtube
+delete
+mkdir AppImages
