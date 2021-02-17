@@ -2,7 +2,6 @@ find <f
 search 
 mkdir 3
 mkdir 4
-open_with 
 mkdir Zips
 cd 
 cd /deb
@@ -14,3 +13,4 @@ mkdir Youtube
 mkdir AppImages
 shell 
 delete
+open_with 
