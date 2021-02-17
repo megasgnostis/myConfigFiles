@@ -2,7 +2,6 @@ find <f
 search 
 mkdir 3
 mkdir 4
-shell 
 open_with 
 mkdir Zips
 cd 
@@ -12,5 +11,6 @@ mkdir Papers
 find st
 mkdir Stunning
 mkdir Youtube
-delete
 mkdir AppImages
+shell 
+delete
