@@ -9,10 +9,11 @@ alias vx="vim $XresourcesFile"
 alias sb="source $bashFile"
 alias sx="xrdb $XresourcesFile"
 
-# run ranger with aliases
-helpScripts="$HOME/StunningHelpFiles/Scripts"
-alias r="$helpScripts/Ranger.sh"
+# ranger
+alias r="ranger --choosedir=$HOME/.rangerdir; cd \"\`cat $HOME/.rangerdir\`\""
 alias sr="sudo ranger"
+
+helpScripts="$HOME/StunningHelpFiles/Scripts"
 
 # help scripts
 alias temp="$helpScripts/CopyTemplate.sh"
