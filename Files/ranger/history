@@ -12,7 +12,6 @@ mkdir Stunning
 mkdir Youtube
 mkdir AppImages
 shell 
-
 find et
 find x1
 find xsession
@@ -22,7 +21,9 @@ open_with nano
 open_with l
 open_with vim
 my_edit
-delete
 mkdir X
 deletel
 open_with 
+
+shell vba
+delete

@@ -10,26 +10,22 @@ alias sb="source $bashFile"
 alias sx="xrdb $XresourcesFile"
 
 # run ranger with aliases
-scripts="$HOME/StunningConfigFiles/Scripts"
-alias aliasesInRangerScript="$scripts/Ranger.sh"
-alias cdToLastRangerDir="cd \"\`cat $HOME/.rangerdir\`\""
-alias r="aliasesInRangerScript; cdToLastRangerDir"
+helpScripts="$HOME/StunningHelpFiles/Scripts"
+alias r="$helpScripts/Ranger.sh"
 alias sr="sudo ranger"
 
 # help scripts
-helpScripts="$HOME/StunningHelpFiles/Scripts"
 alias temp="$helpScripts/CopyTemplate.sh"
 alias dirReplace="$helpScripts/ReplaceInDir.sh"
 
 # git
 alias gh="$helpScripts/GitAddCommitPush.sh"
-alias gpl="git pull"
-alias gcl="git clone"
+alias gp="git pull"
+alias gc="git clone"
 
 # general commands in short
 alias c="cd"
 alias v="vim"
-alias md="mkdir"
 alias sv="sudo vim"
 alias m="make"
 alias mc="make clean"
