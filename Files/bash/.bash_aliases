@@ -17,15 +17,12 @@ alias r="aliasesInRangerScript; cdToLastRangerDir"
 alias sr="sudo ranger"
 
 # help scripts
-helpFiles="$HOME/StunningHelpFiles"
-alias temp="$helpFiles/Scripts/CopyTemplate.sh"
-alias dirReplace="$helpFiles/Scripts/ReplaceInDir.sh"
+helpScripts="$HOME/StunningHelpFiles/Scripts"
+alias temp="$helpScripts/CopyTemplate.sh"
+alias dirReplace="$helpScripts/ReplaceInDir.sh"
 
 # git
-alias ga="git add ."
-alias gc="git commit -m 'I am an automated comment'"
-alias gps="git push"
-alias gh="ga;gc;gps"
+alias gh="$helpScripts/GitAddCommitPush.sh"
 alias gpl="git pull"
 alias gcl="git clone"
 

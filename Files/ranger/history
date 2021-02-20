@@ -21,8 +21,8 @@ find
 open_with nano
 open_with l
 open_with vim
-open_with 
 my_edit
 delete
 mkdir X
 deletel
+open_with 
