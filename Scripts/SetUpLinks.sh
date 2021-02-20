@@ -13,14 +13,13 @@ getIntermediateDirOfFile () {
     .vimrc) echo "vim";;
     .bashrc) echo "bash";;
     .bash_aliases) echo "bash";;
-    .Xresources) echo "urxvt";;
-    .urxvt) echo "urxvt";;
+    .Xresources) echo "X";;
     *) echo "wasn't supposed to happen. got this -> $1"; exit
   esac
 }
 
 # files 
-for file in .vimrc .bashrc .bash_aliases .Xresources .urxvt
+for file in .vimrc .bashrc .bash_aliases .Xresources
 do
   mv -f $HOME/$file $backups
 

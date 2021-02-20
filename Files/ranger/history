@@ -16,10 +16,13 @@ shell
 find et
 find x1
 find xsession
-open_with vim
 open_with vi
 find 
 open_with nano
-open_with 
 open_with l
+open_with vim
+open_with 
+my_edit
 delete
+mkdir X
+deletel
