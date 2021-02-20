@@ -11,8 +11,8 @@ bar {
 }
 
 # Opening and closing stuff
-bindsym $mod+a exec urxvt
-bindsym $mod+s exec brave-browser
+bindsym $mod+a exec st
+bindsym $mod+s exec chromium
 bindsym $mod+d exec dmenu_run
 bindsym $mod+f kill
 

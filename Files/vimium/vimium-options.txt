@@ -1,0 +1,31 @@
+Pattern: https?://duckduckgo.com/*
+Keys: jk
+
+Pattern: https://www.youtube.com/*
+Keys: fNPm<>
+
+keyMappings:
+
+"better down
+map k scrollDown
+
+"better up
+map l scrollUp
+
+"better page down
+map K scrollPageDown
+
+"better page up
+map L scrollPageUp
+
+"gonna search with 's'
+unmap /
+map s enterFindMode
+
+"gonna go back with 'b'
+unmap b
+map b goBack
+
+"for youtube, 'f' is for fullscreen
+unmap F
+map F LinkHints.activateMode"
