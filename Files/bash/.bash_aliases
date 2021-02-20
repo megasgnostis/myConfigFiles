@@ -9,10 +9,6 @@ alias vx="vim $XresourcesFile"
 alias sb="source $bashFile"
 alias sx="xrdb $XresourcesFile"
 
-# peripherals
-alias rwf="sudo service network-manager restart"
-alias mirror='xrandr --output eDP-1 --same-as HDMI-1'
-
 # run ranger with aliases
 scripts="$HOME/StunningConfigFiles/Scripts"
 alias aliasesInRangerScript="$scripts/Ranger.sh"
