@@ -13,13 +13,12 @@ getIntermediateDirOfFile () {
     .vimrc) echo "vim";;
     .bashrc) echo "bash";;
     .bash_aliases) echo "bash";;
-    .Xresources) echo "X";;
     *) echo "wasn't supposed to happen. got this -> $1"; exit
   esac
 }
 
 # files 
-for file in .vimrc .bashrc .bash_aliases .Xresources
+for file in .vimrc .bashrc .bash_aliases 
 do
   mv -f $HOME/$file $backups
 
@@ -28,12 +27,9 @@ done
 
 source "$HOME/.bashrc"
 
+# ranger
 configs="$HOME/.config"
 
-# dirs
-for dir in i3blocks i3 ranger
-do
-  mv -f $configs/$dir $backups
+mv -f $configs/ranger $backups
 
-  ln -s $stunningConfigs/$dir $configs/$dir
-done
+ln -s $stunningConfigs/ranger $configs/ranger
