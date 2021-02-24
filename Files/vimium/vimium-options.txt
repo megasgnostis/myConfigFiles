@@ -28,4 +28,4 @@ map b goBack
 
 "for youtube, 'f' is for fullscreen
 unmap F
-map F LinkHints.activateMode"
+map F LinkHints.activateMode

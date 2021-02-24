@@ -26,7 +26,7 @@ set autoindent
   inoremap <expr> k pumvisible() ? "\<C-N>" : "k"
   inoremap <expr> l pumvisible() ? "\<C-P>" : "l"
   "better way to go to normal mode
-  inoremap <A-Tab> <Esc>
+  inoremap <A-Space> <Esc>
 
 "normal mode maps 
   "copy word under cursor

@@ -47,6 +47,3 @@ alias parlabfs="sshfs -o IdentityFile=$HOME/.ssh/id_rsa parlab02@orion.cslab.ece
 
 # periodic table
 alias ptab="feh $HOME/Pictures/PeriodicTable.png"
-
-# check temperature
-alias ct=" while true; do sudo cpu; sleep 2; done"
