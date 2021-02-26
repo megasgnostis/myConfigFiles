@@ -24,7 +24,8 @@ my_edit
 mkdir X
 deletel
 open_with 
-
 shell vba
-delete
 open_with feh
+
+open_with okular
+delete
