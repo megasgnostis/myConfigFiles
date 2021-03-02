@@ -23,9 +23,11 @@ open_with vim
 my_edit
 mkdir X
 deletel
-open_with 
 shell vba
 open_with feh
 
 open_with okular
+mkdir Ελεύθερα
+mkdir Δίκτυα
+open_with 
 delete
