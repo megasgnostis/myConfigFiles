@@ -19,7 +19,6 @@ open_with vi
 find 
 open_with nano
 open_with l
-open_with vim
 my_edit
 mkdir X
 deletel
@@ -29,5 +28,6 @@ open_with feh
 open_with okular
 mkdir Ελεύθερα
 mkdir Δίκτυα
-open_with 
 delete
+open_with 
+open_with vim
