@@ -10,7 +10,7 @@ alias m="make"
 alias mc="make clean"
 alias mc_="make clean_"
 alias sai="sudo apt install"
-alias bye="sudo shutdown 0"
+alias bye="shutdown 0"
 alias ..="cd .."
 alias gr="grep -r"
 

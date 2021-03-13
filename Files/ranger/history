@@ -11,7 +11,6 @@ find st
 mkdir Stunning
 mkdir Youtube
 mkdir AppImages
-shell 
 find et
 find x1
 find xsession
@@ -28,6 +27,7 @@ open_with feh
 open_with okular
 mkdir Ελεύθερα
 mkdir Δίκτυα
-delete
 open_with 
+shell 
 open_with vim
+delete
