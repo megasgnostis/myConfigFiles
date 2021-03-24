@@ -27,7 +27,12 @@ open_with feh
 open_with okular
 mkdir Ελεύθερα
 mkdir Δίκτυα
-open_with 
 shell 
 open_with vim
+open_with%space
+open_with%space;
+open_with 
+open_with j
+mkdir VMs
+shell aq
 delete

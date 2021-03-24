@@ -26,7 +26,7 @@ set autoindent
   inoremap <expr> k pumvisible() ? "\<C-N>" : "k"
   inoremap <expr> l pumvisible() ? "\<C-P>" : "l"
   "better way to go to normal mode
-  inoremap <A-Space> <Esc>
+  inoremap jj <Esc>
 
 "normal mode maps 
   "copy word under cursor
@@ -81,6 +81,8 @@ set autoindent
   vnoremap d "+d
   "better copy
   vnoremap c "+y
+  "better way to go to normal mode
+  vnoremap jj <Esc>
 
 "command line mode maps
   "edit previous commands
