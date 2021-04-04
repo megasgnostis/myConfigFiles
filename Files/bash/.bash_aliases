@@ -12,7 +12,7 @@ alias mc_="make clean_"
 alias sai="sudo apt install"
 alias bye="shutdown 0"
 alias ..="cd .."
-alias gr="grep -r"
+alias gr="grep -rn"
 
 # git
 alias gh="$helpScripts/GitAddCommitPush.sh"
