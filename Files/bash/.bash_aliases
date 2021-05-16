@@ -21,16 +21,12 @@ alias gc="git clone"
 
 # edit configs
 bashFile="$HOME/.bashrc"
-XresourcesFile="$HOME/.Xresources"
 alias vb="vim $bashFile"
 alias vba="vim $HOME/.bash_aliases"
 alias vv="vim $HOME/.vimrc"
-alias vi3="vim $HOME/.config/i3/config"
-alias vx="vim $XresourcesFile"
 
 # source configs
 alias sb="source $bashFile"
-alias sx="xrdb $XresourcesFile"
 
 # ranger
 alias r="ranger --choosedir=$HOME/.rangerdir; cd \"\`cat $HOME/.rangerdir\`\""

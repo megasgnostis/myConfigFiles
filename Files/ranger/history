@@ -28,7 +28,6 @@ open_with okular
 mkdir Ελεύθερα
 mkdir Δίκτυα
 shell 
-open_with vim
 open_with%space;
 open_with 
 open_with j
@@ -36,4 +35,8 @@ mkdir VMs
 shell aq
 open_with%space
 mkdir src
+open_with q
+open_with vmi
+open_with vim
+shell di
 delete
