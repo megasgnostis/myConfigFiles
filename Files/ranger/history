@@ -39,4 +39,7 @@ open_with q
 open_with vmi
 open_with vim
 shell di
+mkdir Trash
+mkdir Project
 delete
+mkdir Σειρά
