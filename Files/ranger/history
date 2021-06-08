@@ -27,9 +27,7 @@ open_with feh
 open_with okular
 mkdir Ελεύθερα
 mkdir Δίκτυα
-shell 
 open_with%space;
-open_with 
 open_with j
 mkdir VMs
 shell aq
@@ -41,5 +39,10 @@ open_with vim
 shell di
 mkdir Trash
 mkdir Project
-delete
 mkdir Σειρά
+shell 
+find va
+find w
+open_with 
+mkdir Hall
+delete
