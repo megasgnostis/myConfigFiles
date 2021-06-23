@@ -31,7 +31,6 @@ alias sb="source $bashFile"
 
 # ranger
 alias r="ranger --choosedir=$HOME/.rangerdir; cd \"\`cat $HOME/.rangerdir\`\""
-alias sr="sudo ranger"
 
 # help scripts
 alias temp="$helpScripts/CopyTemplate.sh"
